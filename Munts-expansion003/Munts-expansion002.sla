@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SCRIBUSUTF8NEW Version="1.4.1.svn">
-    <DOCUMENT ANZPAGES="4" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="8.50393700787402" BleedLeft="8.50393700787402" BleedRight="8.50393700787402" BleedBottom="8.50393700787402" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Bitstream Charter Bold" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="CineonLog M " DPPr="Fogra27L CMYK Coated Press" DPIn="CineonLog M " DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="CineonLog M " DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="6" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.019" dispY="0.019" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+<SCRIBUSUTF8NEW Version="1.4.3">
+    <DOCUMENT ANZPAGES="4" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="8.50393700787402" BleedLeft="8.50393700787402" BleedRight="8.50393700787402" BleedBottom="8.50393700787402" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Bitstream Charter Bold" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="CineonLog M " DPPr="Fogra27L CMYK Coated Press" DPIn="CineonLog M " DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="CineonLog M " DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="4" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.019" dispY="0.019" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
         <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
         <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
         <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
@@ -89,150 +89,154 @@
         <PAGE PAGEXPOS="100.00062992126" PAGEYPOS="2665.66960629921" PAGEWIDTH="595.28125984252" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" NUM="3" NAM="" MNAM="Normal" Size="A4" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="19.8425 575.433 " HorizontalGuides="19.8425 822.047 " AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="360.080708665355" WIDTH="538.588346456693" HEIGHT="447.75" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="6" BOOKMARK="0" NEXTITEM="27" BACKITEM="-1">
             <ITEXT CH="Introduction"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="In Issue 14 of The MagPi I introduced the LPC1114 I/O processor expansion board for the Raspberry Pi.  In this issue we will examine the factory default SPI agent firmware for the LPC1114 and some of the things that can be done with it, particularly with the analog inputs."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="During the manufacturing test process, SPI agent firmware is written to the LPC1114 microcontroller on each new expansion board.  The firmware is used for performing manufacturing tests to ensure the expansion board is fully functional.  It can be used for many other interesting projects as well.  We will explore how to measure analog signals with C and Python programs, using the LPC1114 I/O processor expansion board SPI agent firmware."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="SPI (Serial Peripheral Interface)"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="SPI (Serial Peripheral Interface) is an industry standard point to point serial communication protocol used between microprocessors and peripheral devices.  SPI is capable of medium speed (tens of megahertz) clock rates and is fairly simple to implement. SPI systems are organized in a master/slave fashion, where one device (normally a processor of some type) is designated the master and completely controls the communication process.  One or more peripheral devices are designated as slaves (figure 1)."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FONT="FreeSans Bold" CH="Figure 1"/>
-            <ITEXT CH=" – SPI Connections"/>
+            <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="There are three I/O signals shared among all peripheral devices on an SPI bus, plus a dedicated chip select signal for each slave device.  An SPI bus requires 3+"/>
-            <ITEXT FONT="FreeSans Oblique" CH="n"/>
-            <ITEXT CH=" I/O signals, where "/>
-            <ITEXT FONT="FreeSans Oblique" CH="n"/>
-            <ITEXT CH=" is the number of peripheral devices.  The Raspberry Pi P1 expansion connector brings out one SPI bus with two chip select signals, so two different peripheral devices can be controlled by the Raspberry Pi, which is always the master.  The LPC1114 microcontroller on the I/O processor expansion board is configured by firmware to act as an SPI slave, using the first chip select signal from the Raspberry Pi."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Since the SPI bus is completely controlled by the master, it does not provide any mechanism for the peripheral device to signal a need for attention.  Either the master must continually send a polling message to the slave, or some other signal external to the SPI bus, such as a dedicated interrupt line, must be used to signal the master.  The LPC1114 I/O Processor expansion board has two interrupt lines connected between the LPC1114 microcontroller and the Raspberry Pi."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="SPI agent firmware"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="I have defined a simple SPI message protocol that the Raspberry Pi uses to send commands to the LPC1114 microcontroller.  Each transaction consists of a 3-word (12-byte) command message sent to the LPC1114, a short delay, and a 4-word (16-byte) response received from the LPC1114.  See the source code header file include/spi-agent.h in the LPC1114 I/O processor expansion board source tree for the data structures that implement this protocol.  The protocol defines commands for configuring the LPC1114 GPIO pins on the terminal block, reading from inputs, writing to outputs, etc."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Linux provides some system calls for issuing SPI transactions.  C programs can call the "/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="ioctl()"/>
-            <ITEXT CH="  library function with special SPI specific parameters to make these system calls.  The "/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="ioctl()"/>
-            <ITEXT CH=" function is pretty ugly to deal with, so I have written some wrapper functions in common/RASPI_spi.c to make it easier.  The functions "/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="SPI_open()"/>
-            <ITEXT CH=", "/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="SPI_close()"/>
-            <ITEXT CH=", and "/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="SPI_transaction()"/>
-            <ITEXT CH=" are provided.  Most of the C demonstration programs for the LPC1114 I/O processor expansion board use these three functions for communicating with the LPC1114 microcontroller."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <ITEXT CH="SPI agent RPC servers"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="The SPI wrapper functions provide an efficient way for a C program to issue SPI commands to the LPC1114 microcontroller, but it is not as straightforward for other languages such as Python.  By further wrapping the SPI services with an RPC (Remote Procedure Call) server, it is possible to make them both easier to call from Python (or other languages) and make them network accessible."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="A RPC client program issues local subroutine calls that are transformed by the RPC library into network messages.  These messages are sent to an RPC server program running on the same machine, or another machine somewhere else on the network.  The RPC server program transforms the incoming messages (using the RPC library again) from the client back into local subroutine calls that perform some service.  Then the RPC server sends return values and/or status back to the RPC client.  RPC essentially allows you to split a single program into parts that run on different machines."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Two different RPC servers are provided for the LPC11114 I/O processor expansion board.  For this discussion we will use the XML-RPC server.  XML-RPC passes data over the network using XML (eXtensible Markup Language) messages over HTTP (HyperText Transfer Protocol).  Python has native XML-RPC support and it is very easy to use.  Many other programming languages (especially C, C++, Java, and C#) also have XML-RPC support available."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Before using the LPC1114 I/O processor expansion board, the supporting software should be installed by typing:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH=" wget -q -O - http://goo.gl/7wtzx | sh"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="The following Python 3 program shows how to read a single analog input on the LPC1114 I/O processor expansion board:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="The result is a number between 0 and 1023 inclusive which indicates the magnitude of the analog voltage at terminal GPIO0 / P1.0."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Analog joystick demo"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="For demonstration purposes I connected a Parallax #27800 (Radio Shack #275-030) to the LPC1114 I/O processor expansion board.  Figure 2 shows the connections between the joystick and the expansion board terminal block."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FONT="FreeSans Bold" CH="Figure 2"/>
-            <ITEXT CH=" – Joystick connections"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="The sample program joystick.py, in the src/adc directory of the LPC1114 I/O processor expansion board source tree, reads the position of the joystick from the P1.0 and P1.1 analog inputs and moves a turtle in a turtle graphics window around (Figure 3).  "/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Later, in another article, we will show how to use the joystick for more sophisticated control purposes."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
+            <ITEXT CH="In The MagPi issue #17, I introduced how to use the LPC1114 analog inputs for sensing the position of an analog joystick.  In this article I will show how to control LEGO® Power Function motors with the LPC1114 I/O Processor and how to apply the joystick for controlling a LEGO® RPV (Remotely Piloted Vehicle)."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT FONT="FreeSans Bold" CH="Figure 3"/>
-            <ITEXT CH=" – Turtle Graphics Screenshot"/>
+            <ITEXT CH="LEGO® Power Functions Remote Control"/>
+            <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Raspberry Pi experiment board"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Figure 4 shows one of several Raspberry Pi experiment boards I have made with the joystick attached.  The Raspberry Pi, the LPC1114 I/O processor expansion board and a solderless breadboard are mounted on a piece of wood.  "/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="The circuit boards are mounted with #4 (3 mm) wood screws and plastic standoffs.  The solderless breadboard came with an adhesive pad and is just stuck to the wood."/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
+            <ITEXT CH="LEGO® Power Functions is a system of motors and sensors for the LEGO® system.  They can be used with either the traditional LEGO® blocks, or with the newer Technics mechanical components.  The motors and sensors can be purchased separately, or as part of a set, such as the LEGO® City train set #7938."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Figure 1 – Some LEGO® Power Functions Components"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Left to right: Motors, IR Receiver, Battery Box"/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The Remote Control IR Receiver #8884 decodes infrared remote control messages in a special coding and sets the speed or position of up to two motors.  The receiver is designed to work with the Remote Control #8879.  We will be synthesizing the infrared messages with firmware in the LPC1114 I/O Processor to control the IR receiver from the Raspberry Pi instead."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Infrared Protocol"/>
+            <para PARENT="Body title"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The IR receiver expects a fairly complex protocol.  Fortunately LEGO has published the protocol specification, which can be downloaded from the web page for the #8884 IR receiver.  I have added a service to the LPC1114 SPI Agent Firmware that encodes messages for the IR receiver."/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Setting up to generate LEGO Power Functions RC messages is easy.  First, configure one of the LPC1114 GPIO pins as an output, with the SPIAGENT_CMD_CONFIGURE_GPIO_OUTPUT service.  Be sure to initialize the output state to OFF by setting the data field to zero."/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Next, generate a message with the SPIAGENT_CMD_PUT_LEGORC service.  The data field must be loaded with parameters encoded as follows:"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Bits 0-7"/>
+            <tab/>
+            <tab/>
+            <ITEXT CH="Speed:"/>
+            <tab/>
+            <ITEXT CH="0-7"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Bits 8-15"/>
+            <tab/>
+            <tab/>
+            <ITEXT CH="Direction:"/>
+            <tab/>
+            <ITEXT CH="0=Reverse 1=Forward"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Bits 16-23"/>
+            <tab/>
+            <ITEXT CH="Motor:"/>
+            <tab/>
+            <tab/>
+            <ITEXT CH="0=All stop, 1=Motor A, 2=Motor B"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Bits 24-31"/>
+            <tab/>
+            <ITEXT CH="Channel:"/>
+            <tab/>
+            <ITEXT CH="1-4"/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="See the LPC1114 I/O Processor Expansion Board User Guide (http://munts.com/rpi-lpc1114/doc/UserGuide.pdf) for more information about the SPI Agent Firmware API (Application Programming Interface).  The available services are described in detail there."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Infrared Emitter Circuit"/>
+            <para PARENT="Body title"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="To transmit commands to the IR receiver, you will need to drive an infrared LED (more properly: infrared emitter) from one of the LPC1114 GPIO pins.  The GPIO pins can only supply 4 mA of current, which is too little to drive an infrared emitter efficiently.  infrared emitters can commonly be driven at 100 mA or more.  In order to boost the output current we will use the ULN2003A, a current driver IC that has been around for many years but is still highly useful for this purpose."/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The ULN2003A contains 7 amplifiers, or current boosters, each of which can sink 500 mA continuously, or even more for short pulses.  Since the ULN2003A is a current sink (pull to ground) device, the cathode (minus) pin of the infrared emitter is connected to the ULN2003A output through a current limiting resistor, and the anode (plus) pin is connected to +5V.  (Do not attempt to connect the infrared emitter to +3.3V; the voltage regulator on the Raspberry Pi cannot supply enough current.)  See Figure 2 for the infrared emitter circuit."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Figure 2 – infrared emitter Connection"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="A wide variety of infrared emitters are available, at either 850 or 940 nm wavelengths.  Both wavelengths seem to work with the #8884 IR Receiver, but I infer from the color of the filter that it may be optimized for 940 nm.  Figure 3 shows a couple of emitters I tried."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Figure 3 – Infrared Emitters – Top: SFH4545, Bottom: SFH4233"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The SFH4545 (Digi-Key part number 475-2919-ND) is a 940 nm emitter rated at 100 mA current (pulse), and is representative of what you will find at Radio Shack or other hobbyist sources.  This class of device should have a 33 Ω current limiting resistor."/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The SFH4233 (Digi-Key part number 475-2910-1-ND) is a very high power 940 nm emitter rated at 1 A current (pulse).  This device should have a 3.3 Ω current limiting resistor."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Warning:  The combination of the ULN2003A, SFH4233, and 3.3 Ω resistor are capable of generating serious heat if the GPIO pin is left in the ON state.  They are capable of melting a solderless breadboard! (Examine the top of Figure 5 below closely for an example...)"/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Python3 Test Program"/>
+            <para PARENT="Body title"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Once the hardware is put together, you can test your setup with the Python3 test program test_legorc.py.  It accepts an optional host name parameter, and then 4 numbers (channel, motor, direction, speed).  If the motor, direction, and speed are all zero, a panic stop is issued (both motors are stopped immediately)."/>
+            <para PARENT="Body text"/>
+            <para/>
+            <ITEXT CH="Example: Show program usage:"/>
+            <para/>
+            <ITEXT CH="./test_legorc.py"/>
+            <para/>
+            <para/>
+            <ITEXT CH="Raspberry Pi LPC1114 I/O Processor Expansion Board LEGO Power Functions RC Test"/>
+            <para/>
+            <para/>
+            <ITEXT CH="Usage: ./test_legorc.py [hostname] &lt;channel:1-4&gt; &lt;motor:0-2&gt; &lt;forward:0-1&gt; &lt;speed:0-7&gt;"/>
+            <para/>
+            <para/>
+            <ITEXT CH="Example: Channel 1, motor 1, forward, speed 1:"/>
+            <para/>
+            <ITEXT CH="./test_legorc.py localhost 1 1 1 1"/>
+            <para/>
+            <para/>
+            <ITEXT CH="Example: Panic Stop"/>
+            <para/>
+            <ITEXT CH="./test_legorc.py localhost 1 0 0 0"/>
+            <para/>
+            <para/>
+            <ITEXT CH="Python3 Remotely Piloted Vehicle"/>
+            <para PARENT="Body title"/>
+            <para/>
+            <ITEXT CH="For experimentation my son and I constructed a skid steer remote vehicle and wrote a Python program to control it using the analog joystick.  A skid steer vehicle has independent motors driving wheels or tracks on either side of the vehicle.  Steering is accomplished by driving each side at a different speed and/or direction.  See Figure 4."/>
+            <para/>
+            <para/>
+            <ITEXT CH="Figure 4 – Python3 Remotely Piloted Vehicle"/>
+            <para/>
+            <ITEXT CH="The Python3 RPV program test_legorc_rpv.py uses the analog joystick setup from the previous installment in The MagPi #17.  The ULN2003A and the SFH4233 infrared emitter have been added to the breadboard.  See Figure 4."/>
+            <para/>
+            <ITEXT CH="Unlike test_legorc.py, which calls C functions in libspiagent.so, test_legorc_rpv.py uses XML-RPC.  This simplifies the Python code somewhat."/>
+            <para/>
+            <para/>
+            <ITEXT CH="Figure 5 – Joystick and IR Emitter Hookup"/>
+            <para/>
+            <ITEXT CH="Implementing skid steering in software from a single joystick proved tricky.  A certain amount of heuristics (fudge factors) were required."/>
+            <para/>
+            <ITEXT CH="Useable range for the IR remote control system will vary depending upon the ambient environment and the placement of the infrared emitter.  In my office, with a low white ceiling, and using the high power SFH4233, range and coverage are very good as the IR reflects well off the ceiling.  At the Helsingborg Raspberry Jam, in an office building foyer with very high ceilings that were dull gray, range was only a few meters with reflected signal.  In such circumstances, placing the emitter for line of sight communications instead of relying on reflections would help."/>
+            <para/>
+            <para/>
             <ITEXT CH="Links"/>
-            <para PARENT="Body title" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="LPC1114 I/O Processor support info, including how to buy one:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://munts.com/rpi-lpc1114"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="XML-RPC information:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://www.xmlrpc.com"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT CH="Python 3  XML-RPC client library documentation:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://docs.python.org/3.2/library/xmlrpc.client.html"/>
-            <para PARENT="Body text" ALIGN="3"/>
+            <para PARENT="Body title"/>
+            <ITEXT CH="LPC1114 I/O Processor Expansion Board support info, including how to buy one:"/>
+            <para/>
+            <ITEXT CH="http://munts.com/rpi-lpc1114"/>
+            <para/>
+            <para/>
+            <ITEXT CH="LEGO® Power Functions home:"/>
+            <para/>
+            <ITEXT CH="http://powerfunctions.lego.com"/>
+            <para/>
+            <ITEXT CH="ULN2003 datasheet:"/>
+            <para/>
+            <ITEXT CH="http://www.ti.com/lit/ds/symlink/uln2003a.pdf‎"/>
+            <para/>
             <ITEXT CH="Parallax 2-axis joystick information:"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://learn.parallax.com/KickStart/27800"/>
-            <para PARENT="Body text" ALIGN="3"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <para PARENT="Body text" ALIGN="1"/>
-            <ITEXT FONT="FreeSans Bold" CH="Figure 4"/>
-            <ITEXT CH=" - Raspberry Pi LPC1114 I/O experiment board"/>
-            <para PARENT="Body text" ALIGN="1"/>
+            <para/>
+            <ITEXT CH="http://learn.parallax.com/KickStart/27800"/>
+            <para/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="91.4995275590553" YPOS="48.8739526562759" WIDTH="612.283464566929" HEIGHT="166.191314259943" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="20% Gray" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.144" LOCALSCY="0.144" LOCALX="-78.740157480315" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="Polygon141" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="P1090892.jpg" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="1" LOCKR="1" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 612.283 0 612.283 0 612.283 0 612.283 0 612.283 166.191 612.283 166.191 612.283 166.191 612.283 166.191 0 166.191 0 166.191 0 166.191 0 166.191 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 612.283 0 612.283 0 612.283 0 612.283 0 612.283 166.191 612.283 166.191 612.283 166.191 612.283 166.191 0 166.191 0 166.191 0 166.191 0 166.191 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="1" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
@@ -333,7 +337,7 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="413.34708662126" YPOS="72.2047243826773" WIDTH="279.65291338874" HEIGHT="28.4153543574803" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Bold" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 279.653 0 279.653 0 279.653 0 279.653 0 279.653 28.4154 279.653 28.4154 279.653 28.4154 279.653 28.4154 0 28.4154 0 28.4154 0 28.4154 0 28.4154 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 279.653 0 279.653 0 279.653 0 279.653 0 279.653 28.4154 279.653 28.4154 279.653 28.4154 279.653 28.4154 0 28.4154 0 28.4154 0 28.4154 0 28.4154 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="4" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="ANALOG CONTOL"/>
+            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="LEGO® CONTROL"/>
             <trail ALIGN="1"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -343,10 +347,8 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="235.007874015748" WIDTH="381.977086614173" HEIGHT="77.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Bold" ISIZE="25" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 381.977 0 381.977 0 381.977 0 381.977 0 381.977 77.25 381.977 77.25 381.977 77.25 381.977 77.25 0 77.25 0 77.25 0 77.25 0 77.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 381.977 0 381.977 0 381.977 0 381.977 0 381.977 77.25 381.977 77.25 381.977 77.25 381.977 77.25 0 77.25 0 77.25 0 77.25 0 77.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="5" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="23" CH="SPI agent firmware for the"/>
+            <ITEXT CH="LEGO® power functions remote control"/>
             <para LINESP="28"/>
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="23" CH="LPC1114 I/O processor"/>
-            <trail LINESP="28"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="128.347086614173" YPOS="956.505590555119" WIDTH="538.588346456693" HEIGHT="730.994409444881" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="3" LAYER="6" BOOKMARK="0" NEXTITEM="37" BACKITEM="0">
@@ -440,32 +442,12 @@
             <trail ALIGN="1"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="91.3743700787398" YPOS="3045.49606299213" WIDTH="613" HEIGHT="470.56724409449" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Black" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.126" LOCALSCY="0.126" LOCALX="0" LOCALY="89.9887514060742" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../adverts/Phenoptix-017/MagPi1.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 613 0 613 0 613 0 613 0 613 470.567 613 470.567 613 470.567 613 470.567 0 470.567 0 470.567 0 470.567 0 470.567 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 613 0 613 0 613 0 613 0 613 470.567 613 470.567 613 470.567 613 470.567 0 470.567 0 470.567 0 470.567 0 470.567 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="8" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <trail/>
-            <PageItemAttributes/>
-        </PAGEOBJECT>
         <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="128.347091674805" YPOS="1838.28344726562" WIDTH="538.588317871094" HEIGHT="115.575439453125" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Cyan" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="15" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 115.575 538.588 115.575 538.588 115.575 538.588 115.575 0 115.575 0 115.575 0 115.575 0 115.575 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 115.575 538.588 115.575 538.588 115.575 538.588 115.575 0 115.575 0 115.575 0 115.575 0 115.575 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="128.347086614173" YPOS="2151.6377952756" WIDTH="255.652913385827" HEIGHT="175" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.28" LOCALSCY="0.28" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="figure_2.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.653 0 255.653 0 255.653 0 255.653 0 255.653 175 255.653 175 255.653 175 255.653 175 0 175 0 175 0 175 0 175 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.653 0 255.653 0 255.653 0 255.653 0 255.653 175 255.653 175 255.653 175 255.653 175 0 175 0 175 0 175 0 175 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
-            <PageItemAttributes/>
-        </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="128.347091674805" YPOS="1845.98425292969" WIDTH="538.588317871094" HEIGHT="116.765747070312" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 116.766 538.588 116.766 538.588 116.766 538.588 116.766 0 116.766 0 116.766 0 116.766 0 116.766 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 116.766 538.588 116.766 538.588 116.766 538.588 116.766 0 116.766 0 116.766 0 116.766 0 116.766 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONTSIZE="9" CH=" import spi_agent"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" import xmlrpc.client"/>
-            <para PARENT="Code"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" s = xmlrpc.client.ServerProxy('http://localhost:8080/RPC2')"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" s.spi.agent.transaction(spi_agent.SPICMD_CONFIGURE_ANALOG_INPUT, spi_agent.LPC1114_GPIO0, 0)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" x = s.spi.agent.transaction(spi_agent.SPICMD_GET_ANALOG, spi_agent.LPC1114_GPIO0, 0)[2]"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" print(str(x))"/>
-            <trail PARENT="Code"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="411" YPOS="1605.84251965118" WIDTH="255.93543311126" HEIGHT="23.8110236559078" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Cyan" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="15" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 23.811 255.935 23.811 255.935 23.811 255.935 23.811 0 23.811 0 23.811 0 23.811 0 23.811 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 23.811 255.935 23.811 255.935 23.811 255.935 23.811 0 23.811 0 23.811 0 23.811 0 23.811 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
