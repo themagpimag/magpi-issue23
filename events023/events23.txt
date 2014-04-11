@@ -1,3 +1,64 @@
+
+--
+
+Focus on Education @ Cambridge Raspberry Jam
+Institute of Astronomy
+Madingley Rd
+CB3 0HA 
+United Kingdom
+Saturday, May 10, 2014 from 12:00 PM to 6:00 PM (BST)
+
+Come along and listen to a variety of talks and presentations centring on the new Computing curriculum and how it affects schools at both Primary and Secondary level. We will explore the challenges of the new curriculum, what resources there are available to teachers and other educators and see how the Raspberry Pi can help to deliver results in the classroom.
+You will also be able to to see young people, and older people, use the Pi in practical workshops.
+Focus on Education is being run as part of the Cambridge Raspberry Jam.
+Please note
+This event is ONLY for teachers, co-ordinators and other educators.
+Tickets for workshops taking place during the Jam will be available separately.
+
+http://www.eventbrite.co.uk/e/focus-on-education-cambridge-raspberry-jam-tickets-10867072707?aff=es2&rank=216&sid=8784f1e3bee711e38ef01231391edcec
+http://www.eventbrite.co.uk/e/10867072707
+--
+
 I'm running a Raspberry Jam on the 12th May at Newcastle under Lyme College.
 Would you be able to help promote the event. The eventbrite URl is:
 https://northstaffsrjam1.eventbrite.co.uk
+
+--
+
+PiCymru - Cardiff Jam
+Saturday, 17 May 2014 from 13:30 to 17:30 (BST)
+https://www.eventbrite.co.uk/e/picymru-cardiff-jam-tickets-11039175471
+Howardian Centre & Teacher Professional Development Centre
+Hammond Way
+Cardiff
+CF23 9NB 
+United Kingdom
+--
+
+Maker Faire Bay Area 2014
+http://www.eventbrite.com/e/maker-faire-bay-area-2014-tickets-9098302267
+San Mateo County Event Center
+1346 Saratoga Dr
+San Mateo, CA 94403
+
+Saturday, May 17, 2014 at 10:00 AM - Sunday, May 18, 2014 at 6:00 PM (PDT)
+--
+
+
+
+--
+
+Using Raspberry Pi GPIO to teach computing for KS 3,4,and A level- Bath
+Network Of Excellence
+Wednesday, 21 May 2014 from 13:30 to 17:30 (BST)
+East Building 0.10,The University of Bath
+Claverton Down
+Bath
+BA2 7AY 
+United Kingdom
+A half day course on getting the most from raspberry pis in the school environment. In this course you will gain an understanding of what opportunities are opened by using raspberry pis in the school environment. This will involve practical sessions involving using the GPIO with both scratch and python.
+http://www.eventbrite.co.uk/e/using-raspberry-pi-gpio-to-teach-computing-for-ks-34and-a-level-bath-registration-11167882437?aff=es2&rank=248&sid=ae1f353abee711e3b95f1231391edcec
+http://www.eventbrite.co.uk/e/11167882437
+--
+
+
