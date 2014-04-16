@@ -1,0 +1,52 @@
+Introduction
+
+The BrickPi provides an interface between LEGO Mindstorms motors and sensors and the Raspberry Pi.  The board has five sensor ports and four motor ports.  The Raspberry Pi communicates with the BrickPi over the serial port, which is available via the 26pin header on the Raspberry Pi.  The BrickPi is able to read both the sensors and the motor encoder values, providing a simple interface to a range of Mindstorm based projects.  More details of the BrickPi are given in Issues 17 and 18 of the MagPi.  This article covers a new Scratch driver for the BrickPi and packaging for the BrickPi Python interface.
+
+A local school decided to buy several BrickPi boards, for their engineering course.  After a few tests, it was clear that a new Scratch driver was needed to allow the BrickPi to be used within the course material.  To allow other Raspberry Pi buses to be used and provide easy configuration of the BrickPi, RpiScratchIO was chosen as the Scratch interface.  More information on RpiScratchIO can be found in Issues 20 and 22 of the MagPi.
+
+Installation
+
+While it should be possible to use this Scratch driver with the BrickPi SD card image, these installation instructions start from a regular Raspbian SD card image.  Once Raspbian has been installed, create a file called update-install.sh :
+
+#!/bin/bash
+#
+# sudo ./update-install.sh
+
+apt-get update
+apt-get upgrade -y
+apt-get install -y python-serial python-setuptools python-dev
+easy_install pip
+pip install BrickPi
+
+# Config.
+echo "init_uart_clock=32000000" >> /boot/config.txt
+sed 's/T0:23/#T0:23/g' /etc/inittab > t
+mv t /etc/inittab
+sed 's/console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 //g' /boot/cmdline.txt > t
+mv t /boot/cmdline.txt
+ls -l /boot/config.txt /etc/inittab /boot/cmdline.txt
+
+
+Then set the script as executable and run it as root:
+
+chmod 755 update-install.sh
+sudo ./update-install.sh
+
+The script will update Raspbian, install BrickPi and its dependencies, and configure the serial port.  (In future versions BrickPi packages, this script may become part of package itself.)
+
+Scratch tank
+
+The BrickPi has to be appropriately configured for each different LEGO sensor.  This means that the correct integer value should to be passed to the Python driver.  This can be easily achieved using the RpiScratchIO configuration file.  Create a new file called tank.cfg that contains:
+
+[DeviceTypes]
+LEGO = import BrickPi; from BrickPi.BrickPiScratch import BrickPiScratch; BrickPiScratch()
+
+[DeviceConnections]
+LEGO = UART0
+
+[BrickPi]
+S1 = ULTRASONIC_CONT
+MA =
+MB =
+
+This file creates an instance of the BrickPiScratch class, assigns it the serial port, and declares the connection of an ultrasonic sensor and two motors to the BrickPi.
