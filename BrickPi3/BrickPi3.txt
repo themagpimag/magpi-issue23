@@ -2,7 +2,7 @@ Introduction
 
 The BrickPi provides an interface between LEGO Mindstorms motors and sensors and the Raspberry Pi.  The board has five sensor ports and four motor ports.  The Raspberry Pi communicates with the BrickPi over the serial port, which is available via the 26pin header on the Raspberry Pi.  The BrickPi is able to read both the sensors and the motor encoder values, providing a simple interface to a range of Mindstorm based projects.  More details of the BrickPi are given in Issues 17 and 18 of the MagPi.  This article covers a new Scratch driver for the BrickPi and packaging for the BrickPi Python interface.
 
-A local school decided to buy several BrickPi boards, for their engineering course.  After a few tests, it was clear that a new Scratch driver was needed to allow the BrickPi to be used within the course material.  To allow other Raspberry Pi buses to be used and provide easy configuration of the BrickPi, RpiScratchIO was chosen as the Scratch interface.  More information on RpiScratchIO can be found in Issues 20 and 22 of the MagPi.
+A local school decided to buy several BrickPi boards, for their engineering course.  After a few tests, it was clear that a new Scratch driver was needed to allow the BrickPi to be used within the course material.  To allow other Raspberry Pi buses to be used and provide easy configuration of the BrickPi, RpiScratchIO was chosen as the Scratch interface.  More information on RpiScratchIO can be found in Issues 20 and 22 of the MagPi and at http:///.
 
 Installation
 
@@ -32,11 +32,11 @@ Then set the script as executable and run it as root:
 chmod 755 update-install.sh
 sudo ./update-install.sh
 
-The script will update Raspbian, install BrickPi and its dependencies, and configure the serial port.  (In future versions BrickPi packages, this script may become part of package itself.)
+The script will update Raspbian, install BrickPi and its dependencies, and configure the serial port.  (In future versions of the BrickPi package, this script may become part of package itself.)
 
 Scratch tank
 
-The BrickPi has to be appropriately configured for each different LEGO sensor.  This means that the correct integer value should to be passed to the Python driver.  This can be easily achieved using the RpiScratchIO configuration file.  Create a new file called tank.cfg that contains:
+The BrickPi has to be appropriately configured for each different LEGO sensor.  This means that the correct integer value should to be passed to the Python driver.  This can be easily achieved with a new field in the RpiScratchIO configuration file.  Create a new file called tank.cfg that contains:
 
 [DeviceTypes]
 LEGO = import BrickPi; from BrickPi.BrickPiScratch import BrickPiScratch; BrickPiScratch()
@@ -49,4 +49,36 @@ S1 = ULTRASONIC_CONT
 MA =
 MB =
 
-This file creates an instance of the BrickPiScratch class, assigns it the serial port, and declares the connection of an ultrasonic sensor and two motors to the BrickPi.
+This file creates an instance of the BrickPiScratch Python class, assigns it the serial port, and declares the connection of an ultrasonic sensor and two motors to the BrickPi.
+
+Connect a LEGO Mindstorms motor to MA and MB.  These motors will drive the tracks of the tank.  Then connect a LEGO utrasonic sensor to S1.  The BrickPi port labelling is given in the MagPi Issue 18 article on the BrickPi.  It is probably a good idea to use a label maker or some Tipex to mark the top of each port on the BrickPi.
+
+Now open Scratch and enable the remote sensor connections, by selecting the "Sensing" palette and right clicking on "sensor value" at the bottom of the tool palette.  (For the current Raspbian version of Scratch, the remote sensor connections need to be disabled and then re-enabled.)  Now start RpiScratchIO by typing
+
+RpiScratchIO tank.cfg
+
+This will create new Scratch sensors with the ranges LEGO:0-LEGO:3, LEGO:10-LEGO:13 and LEGO:20-LEGO:23, where LEGO:0-LEGO:3 are the sensor ports S1-S4, LEGO:10-LEGO:13 correspond to the values written to the four motor ports MA-MB and LEGO:20-LEGO:23 are the motor encoders for MA-MB.  The sensors S1-S4 and the motor encoder MA-MB values can be updated in Scratch by broadcasting read commands.  For example,
+
+LEGO:read:0
+
+will transfer the current S1 value into the Scratch sensor LEGO:0.  The motor speed can be changed by broadcasting a write command:
+
+LEGO:write:0,255
+
+This will set the motor connected to MA to run at full speed.  To stop the motor again, use Scratch to broadcast
+
+LEGO:write:0,0
+
+If a sensor channel is used that has not been configured in the RpiScratchIO file, then a warning will be reported.  To update the sensors that are active in Scratch: exit RpiScratchIO by typing CTRL-C, edit the RpiScratchIO configuration file and then restart RpiScratchIO as before.
+
+The example program below uses three sprites, to indicate when each track is running and how close objects are to the ultrasonic sensor.
+
+The LEGO model used for this build was based on the current version of:
+
+Some modifications were needed to mount the tracks and sensor on the model.  The finished robot is shown below:
+
+Debugging
+
+Do not run more than one Scratch window at once.  When Scratch is running with remote sensor connections enabled it is a server process.  The server process runs on port XXX.  Running more than one Scratch window with remote connections enabled will cause the first process to receive the sensor updates.
+
+
