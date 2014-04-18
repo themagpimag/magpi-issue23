@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SCRIBUSUTF8NEW Version="1.4.3">
-    <DOCUMENT ANZPAGES="3" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="8.50393700787402" BleedLeft="8.50393700787402" BleedRight="8.50393700787402" BleedBottom="8.50393700787402" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Bitstream Charter Bold" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="CineonLog M " DPPr="Fogra27L CMYK Coated Press" DPIn="CineonLog M " DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="CineonLog M " DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="6" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.019" dispY="0.019" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+    <DOCUMENT ANZPAGES="3" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="8.50393700787402" BleedLeft="8.50393700787402" BleedRight="8.50393700787402" BleedBottom="8.50393700787402" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Bitstream Charter Bold" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="CineonLog M " DPPr="Fogra27L CMYK Coated Press" DPIn="CineonLog M " DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="CineonLog M " DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="7" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.019" dispY="0.019" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
         <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
         <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
         <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
@@ -144,7 +144,7 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="654.284409448819" YPOS="1716.00094486142" WIDTH="36.8503937007874" HEIGHT="22.67716535" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="1" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="8" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="37"/>
+            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="21"/>
             <trail ALIGN="1"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -199,168 +199,13 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="235.007874015748" WIDTH="381.977086614173" HEIGHT="77.25" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LINESP="25" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Bold" ISIZE="25" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 381.977 0 381.977 0 381.977 0 381.977 0 381.977 77.25 381.977 77.25 381.977 77.25 381.977 77.25 0 77.25 0 77.25 0 77.25 0 77.25 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 381.977 0 381.977 0 381.977 0 381.977 0 381.977 77.25 381.977 77.25 381.977 77.25 381.977 77.25 0 77.25 0 77.25 0 77.25 0 77.25 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="5" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="25" CH="GPIO Sensing: Motion Detection - Part 1"/>
+            <ITEXT FONT="FreeSans Bold" FONTSIZE="25" CH="GPIO Sensing: Temperature sensor - Part 2"/>
             <trail LINESP="25"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="360.080708665355" WIDTH="538.588346456693" HEIGHT="447.75" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="28" BACKITEM="-1">
-            <ITEXT CH="In previous tutorials in Issues 15 to 19 of The MagPi, the basics behind physical computing with the Raspberry Pi computer were introduced.  The previous articles covered basic Python programming and Board/BCM GPIO numbering, which are both used in this tutorial."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="In this tutorial, a passive infrared sensor (PIR) is used instead of a switch.  The PIR is used to activate a print statement within a Python program when motion is detected. "/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="PIR sensors"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="PIR sensors provide a simple way of detecting motion. Everything on the Earth emits a small amount of infrared radiation, where hotter objects emit more radiation.  PIR sensors are able to detect a change in infrared levels within their detection zone.  For example, when someone comes into a room the PIR detects the infrared radiation change."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="Assembling the circuit"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="For this tutorial, the following parts are required:"/>
-            <para PARENT="Body text"/>
-            <ITEXT FCOLOR="Cyan" FSHADE="100" CH="  * a breadboard"/>
-            <para PARENT="Body text"/>
-            <ITEXT FCOLOR="Cyan" FSHADE="100" CH="  * 6 x male to female jumper wires"/>
-            <para PARENT="Body text"/>
-            <ITEXT FCOLOR="Cyan" FSHADE="100" CH="  * a PIR Sensor"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="All of the components can be purchased from the ModMyPi online shop."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="1. Use three male to female jumper wires and connect the female ends to the PIR sensor terminals.  The three pins on the PIR are labelled as: Red; PIR-VCC (3-5VDC in), Brown; PIR-OUT (digital out) and Black; PIR-GND (ground)."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="2. Plug the male jumper wire connected to PIR-VCC into the positive rail of the breadboard, plug the PIR-GND wire into your negative rail and plug the PIR-OUT wire into any other blank rail."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="3. Use a black jumper wire to connect GPIO GND [Pin 6] on the Raspberry Pi to the negative rail of the breadboard, to which the PIR-GND wire is already connected."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="4. Use a red jumper wire to connect GPIO 5V [Pin 2] on the Raspberry Pi to the positive rail of the breadboard, to which the PIR-VCC wire has already been connected."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="5. Connect GPIO 7 [Pin 26] to the same rail as the PIR-OUT."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="Sensing with Python"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="The status of the PIR can be checked in a similar way as the switch mentioned in previous tutorials.  However, the PIR does not need a pull-up resistor since it outputs 0V or 3V3. The GPIO 7 [Pin 26] connected to the PIR-OUT just needs to be set as an input pin."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="Type in the following using the nano text editor:"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT FONTSIZE="9" CH=" import RPi.GPIO as GPIO"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" import time"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" GPIO.setmode(GPIO.BCM)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" PIR = 7"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" GPIO.setup(PIR, GPIO.IN)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" try:"/>
-            <tab FONTSIZE="9"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   print(&quot;PIR Module Test&quot;)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   print(&quot;(CTRL+C to exit)&quot;)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   time.sleep(2)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   print &quot;Ready&quot;"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   while True:"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="     if GPIO.input(PIR):"/>
-            <tab FONTSIZE="9"/>
-            <para PARENT="Code"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="       print(&quot;Motion detected!&quot;)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="     time.sleep(1)"/>
-            <para PARENT="Code"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH=" except KeyboardInterrupt:"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   print(&quot;Quitting&quot;)"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="   GPIO.cleanup()"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="The program includes several steps that were introduced in the previous articles. At the start there are two import statements to allow the GPIO and time functions to be used."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT FONTSIZE="10" CH=" import RPi.GPIO as GPIO"/>
-            <para PARENT="Code"/>
-            <ITEXT FONTSIZE="10" CH=" import time"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="Then there is the setmode function,"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH=" GPIO.setmode(GPIO.BCM)"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="to configure the GPIO in BCM numbering mode.  More information on the BCM numbering scheme can be found at:"/>
-            <para PARENT="Body text"/>
-            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://elinux.org/RPi_Low-level_peripherals"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="After the GPIO setmode, a variable "/>
-            <ITEXT FONT="Monaco Regular" CH="PIR"/>
-            <ITEXT CH=" is used to store the connection associated with the PIR digital out. This connection number is used to setup the associated pin as an input with:"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH=" GPIO.setup(PIR, GPIO.IN)"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="The example program includes a try-except statement, to clean up the GPIO connections when the program exits.  Inside the try statement there are some print statements and a while loop.  The while loop polls the GPIO input every second.  If the GPIO pin is high then, "/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH=" Motion detected!"/>
-            <para PARENT="Code"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="will be printed on the screen."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="PIR settings"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="On the PIR, there are two potentiometers that adjust the amount of time the PIR is high and also its sensitivity. Follow the labelling on the board, which indicates the function of each potentiometer.  If the program continues to report that motion is detected then try turning down the sensitivity of the PIR. If the potentiometer is turned clockwise then sensitivity will be increased. "/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="GPIO callbacks"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body title"/>
-            <ITEXT CH="In the previous examples, GPIO polling has been used to check the state of a GPIO input pin.  However, the GPIO also allows callbacks.  This means that a pin can be set to call a Python function if the state of the input pin changes."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="This is much better than polling since the function is called immediately, without the need for a high polling frequency."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="This time when the program runs, the CPU of the Raspberry Pi waits for the signal on the PIR to rise. Once the signal rises, the function callback_up is called.  The callback function is passed the channel number of the GPIO pin that went high. Possible GPIO tests are "/>
-            <ITEXT FONT="Monaco Regular" CH="GPIO.RISING"/>
-            <ITEXT CH=", "/>
-            <ITEXT FONT="Monaco Regular" CH="GPIO.FALLING"/>
-            <ITEXT CH=" and "/>
-            <ITEXT FONT="Monaco Regular" CH="GPIO.BOTH"/>
-            <ITEXT CH="."/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body title"/>
-            <ITEXT CH="Next time"/>
-            <para PARENT="Body title"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="That's it, a very simple method of connecting a low cost movement sensor to the Raspberry Pi.  "/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="The next article will include a buzzer, some LEDs and a magnetic door lock. These parts will be used to build a low cost Raspberry Pi based security system!"/>
-            <trail PARENT="Body text"/>
+            <ITEXT CH="The Raspberry Pi and 1-Wire Temperature Sensors In previous tutorials weve outlined the integration of simple sensors and switches with the Raspberry Pi. These components have had a simple on/off or high/low output, which is sensed by the Raspberry Pi. Our PIR movement sensor tutorial for example, simply says yes, Ive detected movement.So, what happens when we connect a more advanced sensor and want to read data more complex data? In this tutorial well be connecting a 1-Wire Digital Thermometer and programme our Raspberry Pi to read the output the temperature it senses!In 1-Wire sensors, all data is sent down one wire, which makes it great for microcontrollers such as the Raspberry Pi, as it only requires one GPIO pin for sensing. In addition to this, most 1-Wire sensors will come with a unique serial code (more on this later) which means you can connect multiple units up to one microcontroller without them interfering with each other.The sensor were going to use in this tutorial is the Maxim DS18B20+ Programmable Resolution 1-Wire Digital Thermometer. The DS18B20+ has a similar layout to transistors called the TO-92 package, with three pins: GND, Data (DQ), and 3.3V power line (VDD). Youll also need some jumper wires, a breadboard and a 4.7k (or 10k) resistor. The resistor in this setup is used as a 'pull-up' for the data-line, and should be connected between the DQ and VDD line. It ensures that the 1-Wire data line is at a defined logic level, and limits interference from electrical noise if our pin was left floating. Were also going to be using GPIO 4 [Pin 7] as the driver pin for sensing the thermometer output. This is the dedicated pin for 1-Wire GPIO sensing.Hooking it up1. Connect GPIO GND [Pin 6] on the Pi to the negative rail on the breadboard and connect GPIO 3.3V [Pin 1] on the Pi to the Positive rail on the breadboard.2. Plug the DS18B20+ into your breadboard, ensuring that all three pins are in different rows. Familiarise yourself with the pin layout, as its quite easy to hook it up backwards!3. Connect DS18B20+ GND [Pin 1] to the negative rail of the breadboard.4. Connect DS18B20+ VDD [Pin 3] to the positive rail of the breadboard.5. Place your 4.7k resistor between DS18B20+ DQ [Pin 2] and a free row on your breadboard.6. Connect that free end of the 4.7k resistor to the positive rail of the breadboard.7.  Finally, connect DS18B20+ DQ [Pin 2] to GPIO 4 [Pin 7] with a jumper wire.Thats it; were now ready for some programming! ProgrammingWith a little set up, the DS18B20+ can be read directly from the command line without the need for any Python programs. However, this requires us to input a command every time we want to know the temperature reading. In order to introduce some concepts for 1-Wire interfacing, well access it via terminal first, and well then write a Python programme which will read the temperature automatically at set time intervals.The Raspberry Pi comes equipped with a range of drivers for interfacing. However, its not feasible to load every driver when the system boots, as it will increase the boot time significantly and use a considerable amount of system resources for redundant processes. These drivers are therefore stored as loadable modules and the command modprobe is employed to boot them into the Linux kernel when theyre required. The following two commands load the 1-Wire and thermometer drivers on GPIO 4.sudo modprobe w1-gpiosudo modprobe w1-thermWe then need to change directory cd to our 1-Wire device folder and list ls the devices in order to ensure that our thermometer has loaded correctly.cd /sys/bus/w1/devices/lsIn the device drivers, your sensor should be listed as a series of numbers and letters. In this case, the device is registered as 28-000005e2fdc3. You then need to access the sensor with the cd command, replacing our serial number with your own.cd 28-000005e2fdc3The sensor periodically writes to the w1_slave file, so we simply use the cat command to read it.cat w1_slaveThis yields the following two lines of text, with the output t= showing the temperature in degrees Celsius. A decimal point should be placed after the first two digits e.g. the temperature reading weve received is 23.125 degrees Celsius.72 01 4b 46 7f ff 0e 10 57 : crc=57 YES72 01 4b 46 7f ff 0e 10 57 t=23125In terms of reading from the module, this is all thats required from the terminal. Try holding onto the thermometer and taking another reading! With these commands in mind, we can write a Python program to output our temperature data automatically.Python ProgramOur first step is to import the required modules: os allows us to enable our 1-Wire drivers and interface with our sensor, and time allows our Raspberry Pi to define time, and enables the use of time periods in our code.import osimport timeWe then need to load our drivers:os.system('modprobe w1-gpio')os.system('modprobe w1-therm')The next step is to define our sensors output file (the w1_slave file) as defined above. Remember to utilise your own temperature sensors serial code!temp_sensor = sys/bus/w1/devices/28-000005e2fdc3/w1_slaveWe then need to define a variable for our raw temperature value (temp_raw); the two lines outputted by the sensor demonstrated with our terminal example. We could simply print this statement now. However, were going to process it into something more useable. So, we open, read, record and then close our temperature file. We use the return function here, in order to recall this data at a later stage in our code.def temp_raw():    f = open(temp_sensor, 'r')    lines = f.readlines()    f.close()    return linesFirst, we check our variable from the previous function for any errors. If you study our original output as defined in the terminal example, we get two lines of code (Line 0 = 72 01 4b 46 7f ff 0e 10 57 : crc=57 YES); we strip this line except for the last three digits, and check for the YES signal, indicating a successful temperature reading from the sensor. In Python, not-equal is defined as !=, so here were saying whilst the reading does not equal YES, sleep for 0.2s and repeat.def read_temp():    lines = temp_raw()    while lines[0].strip()[-3:] != 'YES':        time.sleep(0.2)        lines = temp_raw()Once the program is happy that the YES signal has been received, we proceed to our second line of output code (Line 1 = 72 01 4b 46 7f ff 0e 10 57 t=23125). We find our temperature output t=, check it for errors, strip the output of the t= phrase to leave just the temperature numbers, and run two calculations to give us the figures in Celsius and Fahrenheit.     temp_output = lines[1].find('t=')    if temp_output != -1:        temp_string = lines[1].strip()[temp_output+2:]        temp_c = float(temp_string) / 1000.0        temp_f = temp_c * 9.0 / 5.0 + 32.0        return temp_c, temp_fFinally, we loop our process and tell it to output our temperature data every 1 second.while True:        print(read_temp())        time.sleep(1)So thats our code! Save your program, and run it to yield the temperature output:DS18B20+ sensors can be run in parallel, and accessed using their unique serial directories. The Python example above can be edited to access and read from multiple sensors! As always; the DS18B20+ sensor and all components are available separately or as part of our workshop kit from the ModMyPi website."/>
+            <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="128.347091674805" YPOS="956.505615234375" WIDTH="538.588317871094" HEIGHT="730.995590551181" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.996 538.588 730.996 538.588 730.996 538.588 730.996 0 730.996 0 730.996 0 730.996 0 730.996 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.996 538.588 730.996 538.588 730.996 538.588 730.996 0 730.996 0 730.996 0 730.996 0 730.996 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="42" BACKITEM="27">
@@ -440,7 +285,7 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="104.36314960626" YPOS="834.11149604252" WIDTH="36.8503937" HEIGHT="22.67716535" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="1" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="7" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="36"/>
+            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="20"/>
             <trail ALIGN="1"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -449,7 +294,7 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="104.36314960626" YPOS="2597.89039368032" WIDTH="36.8503937" HEIGHT="22.67716535" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="1" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 36.8504 0 36.8504 0 36.8504 0 36.8504 0 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 36.8504 22.6772 0 22.6772 0 22.6772 0 22.6772 0 22.6772 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="7" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
-            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="38"/>
+            <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="22"/>
             <trail ALIGN="1"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
