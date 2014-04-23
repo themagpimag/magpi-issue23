@@ -452,7 +452,8 @@
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH="    use_synth :tb303"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="10" CH="    play 30, attack: 0, release: 0.2"/>
+            <ITEXT FONTSIZE="10" CH="    play 30, attack: 0, release: 0."/>
+            <ITEXT CH="3"/>
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH="    sleep 0.5"/>
             <para PARENT="Code"/>
@@ -466,7 +467,8 @@
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH="    use_synth :tb303"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="10" CH="    play 42, attack: 0, release: 0.2"/>
+            <ITEXT FONTSIZE="10" CH="    play 30, attack: 0, release: 0."/>
+            <ITEXT CH="3"/>
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH="    sleep 0.5"/>
             <para PARENT="Code"/>
@@ -513,7 +515,7 @@
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH="    use_synth :tb303"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="10" CH="    play 45, attack: 0, release: 0.2, "/>
+            <ITEXT FONTSIZE="10" CH="    play 45, attack: 0, release: 0.3, "/>
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="10" CH=" cutoff: 70"/>
             <para PARENT="Code"/>
@@ -538,16 +540,26 @@
             <ITEXT CH=". Press the Help button for a full list."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="There are lots of other things we can do now, but unfortunately I'm running out of space in this article so I'll just throw a couple of ideas at you. First, we can try some randomisation. A really fun function is rrand. It will return a random value between two values. We can use this to make the cuffoff bounce around for a really cool effect. Instead of passing a number like 70 to the cutff value, try rrand(40, 120). Also, instead of only playing note 45, let's choose a value from a list of numbers. Try changing 45 to chord(:a3, :minor).choose. Your play line should look like this:"/>
+            <ITEXT CH="There are lots of other things we can do now, but unfortunately I'm running out of space in this article so I'll just throw a couple of ideas at you. First, we can try some randomisation. A really fun function is rrand. It will return a random value between two values. We can use this to make the cuffoff bounce around for a really cool effect. Instead of passing a number like 70 to the cutoff value, try "/>
+            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="rrand(40, 120)"/>
+            <ITEXT CH=". Also, instead of only playing note 45, let's choose a value from a list of numbers. Try changing 45 to "/>
+            <ITEXT FONT="Monaco Regular" FONTSIZE="11" CH="chord(:a3, :minor).choose"/>
+            <ITEXT CH=". Your play line should look like this:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="  play chord(:a2, :minor).choose, attack: 0, release: 0.3, cutoff: rrand(30, 100)"/>
+            <ITEXT CH="  play chord(:a2, :minor).choose, attack: "/>
+            <para PARENT="Code"/>
+            <ITEXT CH=" 0, release: 0.3, cutoff: rrand(40, 120)"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Now you can start experimenting with different chords and range values for cutoff. You can do something similar with the pan value too:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="  play chord(:a2, :minor).choose, attack: 0, release: 0.3, cutoff: rrand(30, 100), pan: rrand(-1, 1)"/>
+            <ITEXT CH="  play chord(:a2, :minor).choose, attack: "/>
+            <para PARENT="Code"/>
+            <ITEXT CH=" 0, release: 0.3, cutoff: rrand(40, 120), "/>
+            <para PARENT="Code"/>
+            <ITEXT CH=" pan: rrand(-1, 1)"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Now throw some FX in, mess around and just have fun!"/>
@@ -720,6 +732,14 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="3" PTYPE="6" XPOS="128.347091674805" YPOS="2719.1337890625" WIDTH="257.311096191406" HEIGHT="139.291748046875" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Theme" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 139.292 257.311 139.292 257.311 139.292 257.311 139.292 0 139.292 0 139.292 0 139.292 0 139.292 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 139.292 257.311 139.292 257.311 139.292 257.311 139.292 0 139.292 0 139.292 0 139.292 0 139.292 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="6" XPOS="128.347091674805" YPOS="3220.40986020546" WIDTH="257.311096191406" HEIGHT="43.165283203125" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Theme" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 43.1653 257.311 43.1653 257.311 43.1653 257.311 43.1653 0 43.1653 0 43.1653 0 43.1653 0 43.1653 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 43.1653 257.311 43.1653 257.311 43.1653 257.311 43.1653 0 43.1653 0 43.1653 0 43.1653 0 43.1653 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="6" XPOS="128.347091674805" YPOS="3321.40991210938" WIDTH="257.311096191406" HEIGHT="55.090087890625" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Theme" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 55.0901 257.311 55.0901 257.311 55.0901 257.311 55.0901 0 55.0901 0 55.0901 0 55.0901 0 55.0901 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 257.311 0 257.311 0 257.311 0 257.311 0 257.311 55.0901 257.311 55.0901 257.311 55.0901 257.311 55.0901 0 55.0901 0 55.0901 0 55.0901 0 55.0901 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
