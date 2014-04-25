@@ -1,0 +1,2 @@
+Need to mention the bounty on the EV3 sensors
+Need to describe how the Python loop works and that the changes in the BrickPi time out after a while, to prevent run-a-way robots.
