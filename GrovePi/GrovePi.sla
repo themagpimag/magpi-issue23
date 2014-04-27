@@ -206,10 +206,11 @@
             <ITEXT CH="Introduction"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The GrovePi is a stackable add-on hardware for the Raspberry Pi. The GrovePi simplifies the art of electronic circuit hacking since it comes with an onboard microcontroller. The GrovePi enables interfacing the Raspberry Pi to an ecosystem of modules including sensors, actuators and displays. The board comes with analog inputs, digital I/O and I2C interfaces. The modules are called “electronic bricks” designed for interface with the Arduino and makes prototyping using the Raspberry Pi easier. The GrovePi contains an Atmega328 microcontroller that comes preloaded with the firmware required to communicate to the Raspberry Pi. It also comes with a provision to flash the on board microcontroller with your own firmware for a project.  The GrovePi communicates to the Raspberry Pi using the I2C interface. Since the Grove Pi is stackable, it is possible to make use of other GPIO pins as well as interface I2C devices to the Raspberry Pi. "/>
+            <ITEXT CH="The GrovePi is a an extension board that allows additional hardware to be stacked on top of the Raspberry Pi."/>
             <para PARENT="Body text"/>
+            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://www.dexterindustries.com/GrovePi/"/>
             <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
+            <ITEXT CH="The GrovePi simplifies the art of electronic circuit hacking, since it comes with an onboard microcontroller. The GrovePi enables interfacing the Raspberry Pi to an ecosystem of modules including sensors, actuators and displays, through a set of standard connectors.  The board comes with analog inputs, digital input/output (I/O) and I2C interfaces. The modules are called “electronic bricks”.  They are  designed to interface with the Arduino and make prototyping using the Raspberry Pi easier.  The GrovePi is based on an Atmega328 microcontroller that comes preloaded with the firmware required to communicate with the Raspberry Pi.  It also comes with the possibility of flashing the onboard microcontroller with your own firmware for a project.  The GrovePi communicates with the Raspberry Pi using the I2C interface.  Since the Grove Pi is stackable, it is possible to make use of other GPIO pins as well as interface I2C devices to the Raspberry Pi. "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
@@ -232,7 +233,7 @@
             <ITEXT CH="Blinking LED example"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="A simple test for the library is the LED blinking example.  Let’s get started by having a look at the code for blinking an LED on the GrovePi using a python script:"/>
+            <ITEXT CH="To test that the GrovePi is working correctly, a simple LED example can be used.  The GrovePi is controlled from the Raspberry Pi using Python and the GrovePi module.  To cause the LED on the GrovePi to blink:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT FONTSIZE="9" CH=" import time"/>
@@ -259,89 +260,124 @@
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="9" CH="   except IOError:"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="     print &quot;Error&quot;"/>
+            <ITEXT FONTSIZE="9" CH="     print(&quot;Error&quot;"/>
+            <ITEXT CH=")"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="We get started by importing the grovepi module.  We set the pin 7 as output."/>
+            <ITEXT CH="At the top fo the program, the GrovePi module is imported.  Then pin 7 is configured as an output pin."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH=" grovepi.pinMode(7,&quot;OUTPUT&quot;)"/>
+            <ITEXT CH="     grovepi.pinMode(7,&quot;OUTPUT&quot;)"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The function calls of the library are similar to that of the Arduino libraries. We should able to blink an LED by setting the pin 7 to high and low alternately."/>
+            <ITEXT CH="Within the loop, the "/>
+            <ITEXT FONT="Monaco Regular" CH="digitalWrite"/>
+            <ITEXT CH=" function is used to turn the LED on and off.  The program waits for one second after turning the LED on and one second after turning the LED off."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The GrovePi function naming scheme is similar to the Arduino libraries."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Data-logger application"/>
             <para PARENT="Body title"/>
             <para/>
-            <ITEXT CH="Another example is a datalogger application using an air quality sensor module and a real time clock module. The application reads the current time from the RTC module and displays it on the GUI. The sensor value is written to a text file along with the time into a text file. This application makes use of the Tkinter GUI toolkit to implement a simple user interface."/>
+            <ITEXT CH="The GrovePi can be used to measure the air quality and log the associated data.  This is achieved using an air quality sensor module and a real time clock (RTC) module,"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT FONTSIZE="9" CH="tk = Tk()"/>
+            <ITEXT FONTSIZE="9" CH=" tk = Tk()"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="#Add a canvas area ready for drawing on"/>
+            <ITEXT FONTSIZE="9" CH=" # Add a canvas area ready for drawing on"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="SensorButton = Button(tk,text=&quot;Update Air Quality Value&quot;,command= Analog)"/>
+            <ITEXT FONTSIZE="9" CH=" SensorButton = Button(tk,text=&quot;Update Air"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="SensorButton.pack()"/>
+            <ITEXT FONTSIZE="9" CH="  Quality Value&quot;,command= Analog)"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="#Add an exit button"/>
+            <ITEXT FONTSIZE="9" CH=" SensorButton.pack()"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="btn = Button(tk, text=&quot;Exit&quot;, command=terminate)"/>
+            <ITEXT FONTSIZE="9" CH=" #Add an exit button"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="btn.pack()"/>
+            <ITEXT FONTSIZE="9" CH=" btn = Button(tk, text=&quot;Exit&quot;, "/>
+            <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH="  command=terminate)"/>
+            <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH=" btn.pack()"/>
             <para PARENT="Code"/>
             <ITEXT FONTSIZE="9" CH="    "/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="Label1 = Label(tk) "/>
+            <ITEXT FONTSIZE="9" CH=" Label1 = Label(tk) "/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="Label1.pack() "/>
+            <ITEXT FONTSIZE="9" CH=" Label1.pack() "/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="Label1.configure(text=(&quot;Sensor Value = %d&quot;)% grovepi.analogRead(0))"/>
+            <ITEXT FONTSIZE="9" CH=" Label1.configure(text=(&quot;Sensor Value = %d&quot;)%"/>
             <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH="  grovepi.analogRead(0))"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="Label2 = Label(tk)"/>
+            <ITEXT FONTSIZE="9" CH=" Label2 = Label(tk)"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="Label2.pack()"/>
+            <ITEXT FONTSIZE="9" CH=" Label2.pack()"/>
             <para PARENT="Code"/>
             <para/>
-            <ITEXT CH="The Tkinter object is initialized and two button widgets are added. One button widget called Sensor button is used to record the analog value from the air quality sensor along with the time read from the RTC module. A callback function called ‘Analog’ is registered with the button."/>
+            <ITEXT CH="In this example, the GrovePi is used to read the current time from the RTC module and display it in a desktop window.  The sensor value and associated readout time is written into a text file."/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="This program makes use of the Tkinter graphical user interface (GUI) toolkit, to implement a simple user interface.  A basic guide to using Tkinter from Python is given at:"/>
+            <para PARENT="Body text"/>
+            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://pihw.wordpress.com/lessons/rgb-led-lesson-5-creating-a-graphical-user-interface/"/>
+            <para PARENT="Body text"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="The Tkinter object is initialised and two button widgets are added.  One button widget called "/>
+            <ITEXT FONT="Monaco Regular" CH="SensorButton"/>
+            <ITEXT CH=" is used to record the analog value from the air quality sensor along with the time read from the RTC module.  A callback function called "/>
+            <ITEXT FONT="Monaco Regular" CH="Analog"/>
+            <ITEXT CH=" is registered to react to "/>
+            <ITEXT FONT="Monaco Regular" CH="SensorButton"/>
+            <ITEXT CH=" changes."/>
             <para PARENT="Body text"/>
             <para/>
-            <ITEXT FONTSIZE="9" CH="def Analog():"/>
+            <ITEXT FONTSIZE="9" CH=" def Analog():"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="  global Label1"/>
+            <ITEXT FONTSIZE="9" CH="   global Label1"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="  try:"/>
+            <ITEXT FONTSIZE="9" CH="   try:"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    Value = (int)(grovepi.analogRead(0))"/>
+            <ITEXT FONTSIZE="9" CH="     Value = (int)(grovepi.analogRead(0))"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    DisplayTime = grovepi.rtc_getTime()"/>
+            <ITEXT FONTSIZE="9" CH="     DisplayTime = grovepi.rtc_getTime()"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    Label1.configure(text=(&quot;Sensor value = %d&quot;)% Value)"/>
+            <ITEXT FONTSIZE="9" CH="     Label1.configure(text=(&quot;Sensor value ="/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    text_file = open(&quot;Output.txt&quot;, &quot;a&quot;)"/>
+            <ITEXT FONTSIZE="9" CH="      %d&quot;)% Value)"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    text_file.write(&quot;%02d:%02d:%02d Sensor value:%d\n&quot; % (DisplayTime[1],DisplayTime[2],DisplayTime[3],Value))"/>
+            <ITEXT FONTSIZE="9" CH="     text_file = open(&quot;Output.txt&quot;, &quot;a&quot;)"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    text_file.close()"/>
+            <ITEXT FONTSIZE="9" CH="     text_file.write(&quot;%02d:%02d:%02d Sensor"/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="  except IOError:"/>
+            <ITEXT FONTSIZE="9" CH="      value:%d\n&quot; % (DisplayTime[1],  "/>
             <para PARENT="Code"/>
-            <ITEXT FONTSIZE="9" CH="    pass"/>
+            <ITEXT FONTSIZE="9" CH="      DisplayTime[2],DisplayTime[3],Value))"/>
+            <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH="     text_file.close()"/>
+            <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH="   except IOError:"/>
+            <para PARENT="Code"/>
+            <ITEXT FONTSIZE="9" CH="     pass"/>
             <para PARENT="Code"/>
             <para/>
-            <ITEXT CH="The other button Exit terminates the application and destroys the window."/>
+            <ITEXT CH="The other button called "/>
+            <ITEXT FONT="Monaco Regular" CH="Exit"/>
+            <ITEXT CH=" terminates the application and destroys the window."/>
             <para PARENT="Body text"/>
             <para/>
-            <ITEXT CH="def terminate():"/>
+            <ITEXT CH=" def terminate():"/>
             <para PARENT="Code"/>
-            <ITEXT CH="  global tk"/>
+            <ITEXT CH="   global tk"/>
             <para PARENT="Code"/>
-            <ITEXT CH="  tk.destroy()"/>
+            <ITEXT CH="   tk.destroy()"/>
             <para PARENT="Code"/>
             <para PARENT="Code"/>
-            <ITEXT CH="We use the Label widget to update the time using the RTC module."/>
+            <ITEXT CH="We use the "/>
+            <ITEXT FONT="Monaco Regular" CH="Label"/>
+            <ITEXT CH=" widget to update the time using the RTC module."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" def Display_Time():"/>
@@ -352,7 +388,11 @@
             <para PARENT="Code"/>
             <ITEXT CH="     DisplayTime = grovepi.rtc_getTime()"/>
             <para PARENT="Code"/>
-            <ITEXT CH="     Label2.configure(text=(&quot;%02d:%02d:%02d&quot;)%(DisplayTime[1],DisplayTime[2],DisplayTime[3]))"/>
+            <ITEXT CH="     Label2.configure(text=(&quot;%02d:%02d:%02d&quot;)"/>
+            <para PARENT="Code"/>
+            <ITEXT CH="      %(DisplayTime[1],DisplayTime[2],"/>
+            <para PARENT="Code"/>
+            <ITEXT CH="      DisplayTime[3]))"/>
             <para PARENT="Code"/>
             <ITEXT CH="     tk.after(1000,Display_Time)"/>
             <para PARENT="Code"/>
@@ -365,38 +405,42 @@
             <ITEXT CH="     tk.after(1000,Display_Time)"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The function call rtc_getTime() returns an 8 byte array containing the date and time information. This is set as text in the Label widget. The text is updated every second using the tk widgets method after."/>
+            <ITEXT CH="The function call "/>
+            <ITEXT FONT="Monaco Regular" CH="rtc_getTime()"/>
+            <ITEXT CH=" returns an 8 byte array, containing the date and time information.  This is set as the text in the "/>
+            <ITEXT FONT="Monaco Regular" CH="Label"/>
+            <ITEXT CH=" widget.  The text is updated every second, using the tk widgets method "/>
+            <ITEXT FONT="Monaco Regular" CH="after"/>
+            <ITEXT CH="."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="     tk.after(1000,Display_Time)"/>
             <para PARENT="Code"/>
             <para/>
-            <ITEXT CH="When we put everything together, the GUI looks something like this:"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Putting all the code together, the GUI looks something like this:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="The application logs data as follows:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="06:09:56 Sensor value: 260"/>
+            <ITEXT CH=" 06:09:56 Sensor value: 260"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
+            <para PARENT="Body title"/>
             <ITEXT CH="Conclusion"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The GrovePi is a board that brings together the Arduino’s capabilities to the Raspberry Pi by enabling the interface of the Grove modules to the Raspberry Pi. The Grove Pi board costs USD 24 and there are different grove modules available from prices as low as USD 5 (a relay module) to USD 50 (an EMG detector-used for detection of signals from skeletal muscles)."/>
+            <ITEXT CH="The GrovePi is a board that allows GrovePi sensors to be easily interface with the Raspberry Pi.  The Grove Pi board costs 24USD.   There are different grove modules, available from prices as low as 5USD (a relay module) to 50USD (an EMG detector used for detection of signals from skeletal muscles)."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="More examples for the Grove Pi are available at: "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="http://www.dexterindustries.com/GrovePi/projects-for-the-raspberry-pi/."/>
+            <ITEXT FCOLOR="Blue" FSHADE="100" CH="http://www.dexterindustries.com/GrovePi/projects-for-the-raspberry-pi/"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The sensor documentation also explains writing a method for the interface of a new module. The python script grovepi_test.py is available at: https://github.com/yamanoorsai/GrovePi_Test"/>
+            <ITEXT CH="The sensor documentation also explains writing a method for the interface of a new module.  The python script grovepi_test.py is available at: "/>
+            <ITEXT FCOLOR="Blue" FSHADE="100" CH="https://github.com/yamanoorsai/GrovePi_Test"/>
             <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT FONT="FreeSans Oblique" FONTSIZE="10" CH="Reference: Meltwater’s Tkinter tutorial:"/>
-            <para PARENT="New Style"/>
-            <ITEXT FONT="FreeSans Oblique" FONTSIZE="10" CH="http://pihw.wordpress.com/lessons/rgb-led-lesson-5-creating-a-graphical-user-interface/"/>
-            <para PARENT="New Style"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="128.347086614173" YPOS="956.505590555119" WIDTH="538.588346456693" HEIGHT="730.994409444881" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="37" BACKITEM="25">
@@ -450,15 +494,47 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="411.12437007874" YPOS="1954.24606299213" WIDTH="255.811062992127" HEIGHT="187.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.110619469026549" LOCALSCY="0.110619469026549" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="GrovePi-Grove for the Raspberry Pi - Grove Sensors (5).JPG" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.811 0 255.811 0 255.811 0 255.811 0 255.811 187.5 255.811 187.5 255.811 187.5 255.811 187.5 0 187.5 0 187.5 0 187.5 0 187.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.811 0 255.811 0 255.811 0 255.811 0 255.811 187.5 255.811 187.5 255.811 187.5 255.811 187.5 0 187.5 0 187.5 0 187.5 0 187.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="411.12437007874" YPOS="2370.93897637794" WIDTH="255.811062992127" HEIGHT="198.03803149606" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.112247065814887" LOCALSCY="0.112247065814887" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="GrovePi-Grove for the Raspberry Pi - Grove Sensors (5).JPG" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.811 0 255.811 0 255.811 0 255.811 0 255.811 198.038 255.811 198.038 255.811 198.038 255.811 198.038 0 198.038 0 198.038 0 198.038 0 198.038 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.811 0 255.811 0 255.811 0 255.811 0 255.811 198.038 255.811 198.038 255.811 198.038 255.811 198.038 0 198.038 0 198.038 0 198.038 0 198.038 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="128.347086614173" YPOS="1064" WIDTH="256.734488188976" HEIGHT="210" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 210 256.734 210 256.734 210 256.734 210 0 210 0 210 0 210 0 210 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 210 256.734 210 256.734 210 256.734 210 0 210 0 210 0 210 0 210 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="128.347086614173" YPOS="1347.46456692914" WIDTH="256.734488188976" HEIGHT="210" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 210 256.734 210 256.734 210 256.734 210 0 210 0 210 0 210 0 210 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 210 256.734 210 256.734 210 256.734 210 0 210 0 210 0 210 0 210 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="128.34708661126" YPOS="1323" WIDTH="256.7344882" HEIGHT="30.3700787015764" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="128.347086614173" YPOS="1621.47244094489" WIDTH="256.7344882" HEIGHT="30.3700787015764" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="128.347086614173" YPOS="958" WIDTH="256.652913385827" HEIGHT="250" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.138956639624162" LOCALSCY="0.138956639624162" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="figure2.jpg" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.653 0 256.653 0 256.653 0 256.653 0 256.653 250 256.653 250 256.653 250 256.653 250 0 250 0 250 0 250 0 250 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.653 0 256.653 0 256.653 0 256.653 0 256.653 250 256.653 250 256.653 250 256.653 250 0 250 0 250 0 250 0 250 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="410.200944870867" YPOS="1168.46456696142" WIDTH="256.7344882" HEIGHT="236.535433038582" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 236.535 256.734 236.535 256.734 236.535 256.734 236.535 0 236.535 0 236.535 0 236.535 0 236.535 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 236.535 256.734 236.535 256.734 236.535 256.734 236.535 0 236.535 0 236.535 0 236.535 0 236.535 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="410.200944870867" YPOS="2002.85039371732" WIDTH="256.7344882" HEIGHT="30.3700787" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="128.347086614173" YPOS="1876.47244098032" WIDTH="256.7344882" HEIGHT="207.527559019684" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 207.528 256.734 207.528 256.734 207.528 256.734 207.528 0 207.528 0 207.528 0 207.528 0 207.528 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 207.528 256.734 207.528 256.734 207.528 256.734 207.528 0 207.528 0 207.528 0 207.528 0 207.528 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="128.347086614173" YPOS="2133" WIDTH="256.7344882" HEIGHT="55.9999999803161" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 56 256.734 56 256.734 56 256.734 56 0 56 0 56 0 56 0 56 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 56 256.734 56 256.734 56 256.734 56 0 56 0 56 0 56 0 56 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="128.347086614173" YPOS="2236.99999998032" WIDTH="256.7344882" HEIGHT="183.000000019684" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 183 256.734 183 256.734 183 256.734 183 0 183 0 183 0 183 0 183 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 183 256.734 183 256.734 183 256.734 183 0 183 0 183 0 183 0 183 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="6" XPOS="128.347086614173" YPOS="2517.47244098032" WIDTH="256.7344882" HEIGHT="30.3700787" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="10" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.734 0 256.734 0 256.734 0 256.734 0 256.734 30.3701 256.734 30.3701 256.734 30.3701 256.734 30.3701 0 30.3701 0 30.3701 0 30.3701 0 30.3701 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="12" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="2" XPOS="411" YPOS="1872" WIDTH="255.935433070867" HEIGHT="91" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.834862385321101" LOCALSCY="0.834862385321101" LOCALX="67.906896253353" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="Screenshot_Grove_Pi.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 91 255.935 91 255.935 91 255.935 91 0 91 0 91 0 91 0 91 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 91 255.935 91 255.935 91 255.935 91 0 91 0 91 0 91 0 91 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
