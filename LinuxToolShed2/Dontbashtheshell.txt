@@ -1,0 +1,133 @@
+Don't bash the shell
+commands: bash, which
+
+The first Linux command-line command which a user encounters, might typically be bash, the default Linux command-line interpreter itself.
+
+For many newcomers, the Linux command-line interface feel dauntingly complex and often slightly inconsistent. One of the reasons for this feeling might be that there really isn’t such a thing as a single monolithic linux command-line interface:  the interface which we see is the result of a relatively basic command-line interpreter shell in combination with a vast and ever growing collection of  commands, which are each stand-alone executable programs installed somewhere on the filesystem.
+
+A shell is just like any other of these commands, except that one of its main purposes is to interact with the user and to execute other commands. There are several popular shells available - besides the original sh, for example also ksh, csh or tcsh - but on Linux today, bash has largely become the standard.
+
+bash is named somewhat tongue in cheek “Bourne again shell”, after sh  or Bourne shell, which was written by Steven Bourne, a British computer scientist working at Bell Labs on the early Unix system.
+
+Like most shells, bash can be used both in an interactive as well as in a batch mode. In batch mode, bash becomes a programming language interpreter in its own right. How to use bash as a scripting language is described in more details in the “Bash Gaffer Tape” series starting issue number 10.
+
+In interactive mode, bash allows the user to edit the current command line buffer using left/right arrows, delete etc. and toggle through the history of recent commands using up/down arrow keys, but also supports many more cryptic but powerful control-key sequences for line editing and navigation. However the main purpose on an interactive shell session is usually to run some other  programs on behalf of the user.
+Command execution
+When the user hits enter, the shell processes the state of the command line editing buffer, breaks the input string into the appropriate pieces, maybe performs some variable substitutions, maybe executes some built-in commands or sets up one or more external commands to be executed.
+
+In order to execute
+
+pi@raspberrypi ~ $ ls -l $SHELL
+-rwxr-xr-x 1 root root 814000 Apr 30  2012 /bin/bash
+
+bash first expands the variable “SHELL” to its definition SHELL=/bin/bash
+because $<varname> triggers variable substitution. The in locates the executable which corresponds to the command ls and then executes it with the two arguments “-l” and “/bin/bash”.
+
+The proper executable is located by searching in order through the list of directories in PATH environment variable, which typically in default Raspbian is set to: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games. We can look at where bash would find a particular command by using the which command
+
+pi@raspberrypi ~ $ which ls
+/bin/ls
+pi@raspberrypi ~ $ which which
+/usr/bin/which
+
+Each executable program in the search path in fact appears to be a bash command. Many like ls,  bash itself or others discussed in this series are part of each standard Linux distribution. But each user can also write their own programs and run them from the shell like any standard tool. Some commands like for example cd or history are directly executed by the shell itself and are called builtin commands (run man builtins for a complete list).
+IO Redirection & Pipelining
+One of the most powerful aspects of bash is input/output redirection. Each program which is run from the shell is launched with three pseudo-files open at startup: standard input, standard output and standard error (output). By default they are connected to the terminal where the shell is running. There are two major ways to change that default association: I/O redirection and pipelining.
+
+I/O redirection involved using of the operators to connect a named file instead of the interactive terminal to one of the 3 I/O streams:
+ < : redirect input
+ > : redirect output
+ 2> : redirect error output
+>> redirect output and append instead of overwrite file
+
+pi@raspberrypi ~ $ grep raspberry < input.txt > output.txt 2> error.txt
+
+In the above example, the grep string matching tool is reading lines of text from a file “inupt.txt” instead of the console and writes those which contain the sub-string “raspberry” into a file “output.txt” instead of printing them to the console. Should there be any errors, they would be written to the file “error.txt”.
+
+Pipelining involves for the shell to run multiple programs in parallel and use the “|” pipe operator to directly feed the output from one command as the input of the next one, as if they were connected by a data-pipe.
+
+By a shared design philosophy, most common Linux commands are very simple and typically only have one purpose and most of them operate on simple unformatted text. Using the pipeline operator, the shell allows them to be combined in ingenious ways to achieve much more complex functionality. Or to put it into the words of Douglas McIlroy, the inventor of the Unix pipe concept: 
+
+“This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.”
+
+
+pi@raspberrypi ~ $ cat /etc/passwd | cut -d: -f7 | sort | uniq -c | sort -nr
+     17 /bin/sh
+      9 /bin/false
+      2 /bin/bash
+      1 /usr/sbin/nologin
+      1 /bin/sync
+
+In this example, the cat command reads a file named /etc/passwd file and simply writes them to the standard output. This output then becomes the input to a new cut command which extracts the 7th field separated by the “:” character and writes this to its output steam, which is then piped to the sort command which alphabetically sorts the lines it reads from its inputs and copies in the new sort order to its output. The uniq command removes and counts duplicate lines on its input and writes each line to the output, prefixed with the number of time it was present in the input. And finally this is passed to a second sort command which sorts its input numerically in reverse order and writes this to its output which happens to be the console from where the shell is running all this.
+
+The /etc/passwd file contains the configuration setup of all the user accounts in the system, with different kinds of information separated by a “:” character. The 7th field in each line is the login shell for this user. There are only 2 accounts which use bash - the root and pi user accounts in this case. All the other accounts are system or role account for particular services and are never intended to be logged-in to and some use commands as their login shell, which are not really shells, like false or nologin.
+Job control
+While pipelining is used to build up multiple simple command into an interconnected super-command, job controls allows the user to run several unrelated commands from the same bash shell at the same time. This is particularly useful in graphical environment like a X Window desktop, where a command line window can be used to launch several graphical applications:
+
+pi@raspberrypi ~ $ lxterm &
+[1] 16220
+pi@raspberrypi ~ $ emacs &
+[2] 16236
+pi@raspberrypi ~ $ idle3 &
+[3] 16256
+
+Adding the “&” to the end of a command line will execute it in the background, immediately freeing up the shell to receive more input and suspending the standard input of the command unless it has been redirected. Any output from the command may continue to go to the shell though. We can also interrupt a blocking command by typing <ctrl>-z to freeze or suspend it and then release it to continue executing in the background by typing bg.
+
+If there are any jobs running in the background, we can see their ID and executed command line using the jobs command. We can then bring any of them into the foreground context using fg [job number] and if necessary terminate typing the key-combination <ctrl>-c.
+
+pi@raspberrypi ~ $ jobs
+[1]   Running                 lxterm &
+[2]-  Running                 emacs &
+[3]+  Running                 idle3 &
+pi@raspberrypi ~ $ fg 1
+lxterm
+^Cpi@raspberrypi ~ $
+History Lesson
+Having started this article on the history of bash, we are now coming full circle and look at the bash history function. This very useful command lets us look at the commands we have already executed and recall some of them in a variety of ways.  The history command itself list all the command which were executed by this user as far back as the history file goes (some output omitted with …).
+
+pi@raspberrypi ~ $ history
+      1  ifconfig -a
+      2  sudo raspi-config
+...
+   965  cat /etc/passwd | cut -d: -f7 | sort | uniq -c | sort -nr
+  966  less /etc/passwd
+  967  history
+pi@raspberrypi ~ $ 
+
+Using the <up arrow> key, we can the flip back through the history until we get back to the command we want to re-run or edit the line first before running.
+
+If we are looking for something more specific, can also filter the output of history, e.g. with the grep tool:
+
+pi@raspberrypi ~ $ history | grep grep
+  909  grep raspberry < input.txt > output.txt 2> error.txt
+  911  cat | grep -v mouse | sort | uniq -c
+  969  history | grep grep
+pi@raspberrypi ~ $ 
+
+In a graphical terminal, we can use the mouse to copy-pasty any command from the history output to the command line or otherwise recall a line by its number:
+
+pi@raspberrypi ~ $ !909
+grep raspberry < input.txt > output.txt 2> error.txt
+-bash: input.txt: No such file or directory
+pi@raspberrypi ~ $ 
+
+Or we can also use the <ctrl>r key-combination to start a search back through the history for the first command which contains whatever we are now typing:
+
+pi@raspberrypi ~ $ 
+(reverse-i-search)`fun': echo “bash is a lot of fun…”
+
+Another convenient shorthand is contextual auto-completion. Depending on the position in the command-line, hitting tab once may complete the current word behind the cursors, if there is a single matching completion. Hitting the tab key twice prints all the possible suggestions. E.g. typing ba<tab><tab> results in:
+
+pi@raspberrypi ~ $ ba
+badblocks  base64     basename   bash       bashbug    
+pi@raspberrypi ~ $ ba
+
+Auto-completion is a nice way to avoid typos and save on some typing for command names or complex filesystem paths for example. For some common commands, even the options can be auto-completed (e.g. ls --<tab>)
+
+Users can also customize the behavior and appearance of their login shell session by adding configuration commands to some of the default files which bash loads and executes on startup, e.g. reading from ~/.bashrc .
+
+Part of the elegant simplicity of the Unix command model is that the command line interpreter itself is nothing but a command itself, which happens to execute other commands. It has no special privileges and anybody could write one of their own. However a well designed shell like bash, should play to the strength of the UNIX philosophy where each tool should be simple, do one thing well and be able to act as a filter in a multi-stage pipeline of commands to implement complex functions as needed.
+
+Modern shells like bash have a lot of nice usability features which make interacting with a Linux terminal session a lot less daunting and knowing some of the tricks and shorthands can save a lot of time.
+
+But bash is only as useful as the commands it can execute. What are some of your favorite or most puzzling Linux commands? Send your comments to [feedback email] and maybe we can cover them in a later episode.
