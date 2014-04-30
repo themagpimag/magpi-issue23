@@ -1,0 +1,135 @@
+Minecraft is a very popular game that has more recently been used as a teaching tool, to encourage programming.  Minecraft for the Raspberry Pi is free and can be downloaded installed easily.  The game is packaged with a Python application programmer interface (API), which allows interactions with players and blocks.  An introduction to this API was given in Issue 11 of the MagPi.  There are also additional teaching resources, such as Craig Richardson’s Python Programming for Raspberry Pi book.
+
+The interaction with Minecraft via the Python API is not limited to just software.  Input/output (I/O) devices that are connected to a Raspberry Pi can react to or produce events in the Minecraft world.  In this opens of a range of possibilities, such as opening the garage door when the Minecraft player goes into the garage.  Or perhaps creating a blinking blob of rock when someone presses the door bell or walks past a passive infrared sensor (PIR).  Since the Python API sends commands to the Minecraft server process over a network, the Raspberry Pi that is interacting with the Minecraft session could be in the garden monitoring the weather.  In this article, some more examples of the API and connection with the PiFace extension board are given.
+
+PiFace and software
+
+The PiFace Digital expansion board provides a safe way of connecting devices to the Raspberry Pi, via buffered screw terminals.
+http://www.piface.org.uk/products/piface_digital/
+The board includes 2 relays that are suable for low voltage applications, 4 switches, 8 digital inputs, 8 open collector outputs and 8 LED indicators.  The PiFace communicates with the Raspberry Pi via the SPI bus on the GPIO.  There are Python and Scratch interfaces that are packaged for easy installation using the Debian package manager.
+
+Starting from a recent Raspbian image, make sure that that image is up to date:
+
+sudo apt-get update
+sudo apt-get upgrade -y
+
+Then start the raspi-config and selected the Advanced Options,
+
+sudo raspi-config
+
+Select SPi and set the value to "Yes".  Then select "Ok" and "Finish".  Then install the Python library
+
+sudo apt-get install python-pifacedigitalio -y
+
+Installing Minecraft
+
+If Minecraft is not already installed, 
+
+cd ~
+wget https://s3.amazonaws.com/assets.minecraft.net/pi/minecraft-pi-0.1.1.tar.gz
+tar zxvf minecraft-pi-0.1.1.tar.gz
+
+Rather than copying the API files, the directory where the API is can be added to the PYTHONPATH
+
+if [[ -z $PYTHONPATH ]]; then
+  export PYTHONPATH="/home/pi/mcpi/api/python/mcpi"
+elif [[ $PYTHONPATH != *"/home/pi/mcpi/api/python/mcpi"* ]]; then
+  export PYTHONPATH="$PYTHONPATH:/home/pi/mcpi/api/python/mcpi"
+fi
+
+This Bash script can be added to a script that is sourced in each shell window that is used to run a Minecraft Python program or added to the end of the ~/.bashrc file.  For example, if the these lines of Bash are in setup-minecraft.sh,
+
+source setup-minecraft.sh
+
+Minecraft traps and tricks
+
+There are many actions that could be triggered by hardware input changes.  In this article, some dramatic events that are centred on a given player are used.  Create a file called mcTraps.py and append to it
+
+from block import *
+import time
+
+def sandTrap(mc):
+  pos = mc.player.getTilePos()
+  mc.setBlocks(pos.x-10,pos.y+15,pos.z-10,pos.x+10,pos.y+18,pos.z+10,SAND)
+  mc.postToChat("Welcome to the beach!")
+
+def volcanoTrap(mc):
+  pos = mc.player.getTilePos()
+  mc.postToChat("Warning.. volcano!")
+  time.sleep(1)
+  mc.setBlocks(pos.x,pos.y-50,pos.z,pos.x,pos.y-1,pos.z,LAVA)
+  time.sleep(1)
+  mc.setBlocks(pos.x-2,pos.y,pos.z-2,pos.x+2,pos.y+2,pos.z+2,LAVA)
+  mc.postToChat("A bit too hot!")
+
+def holeTrap(mc):
+  pos = mc.player.getTilePos()
+  mc.postToChat("Watch your feet!")
+  time.sleep(1)
+  mc.setBlocks(pos.x-2,pos.y-40,pos.z-2,pos.x+2,pos.y,pos.z+2,AIR)
+
+Then save the file and create another file called mcControl.py,
+
+#!/usr/bin/env python
+from minecraft import Minecraft
+import pifacedigitalio
+from mcTraps import *
+import time
+
+
+def switch_pressed(event):
+    # Turn the PiFace LED on 
+    event.chip.output_pins[event.pin_num].turn_on()
+
+   # Use the switch number to determine what should happen
+   if  event.pin_num == 0:
+      McControl.nextConnection()
+      return None
+
+   # Get the current connection
+   mc = McControl.getConnection()
+    if event.pin_num == 1:
+      sandTrap(mc)
+    elif event.pin_num == 2:
+      volcanoTrap(mc)
+    elif event.pin_num == 3:
+      holeTrap(mc)
+    else:
+       raise Exception("ERROR: pin number is out of range.")
+
+class McConnections:
+  __init__(self, ips):
+     self.ips = ips
+
+     # Open connections with the Minecraft sessions
+    self.connections={}
+    for ip in ips:
+      self.connections[ip] = Minecraft.create(ip)
+
+    self.connectionNumber = 0
+    self.numberOfConnection = len(ips)
+
+  nextConnection(self):
+      self.connectionNumber  = self.connectionNumber  + 1
+      if self.connectionNumber  >= self.numberOfConnection:
+        self.connectionNumber  = 0
+      print("Using IP=%s" % self.ips[self.connectionNumber])
+
+  getConnection(self):
+      return self.connections[self.ips[self.connectionNumber]])
+ 
+    
+if __name__ == "__main__":
+  # IP addresses of Minecraft users on the local area network
+  ips = [ "192.168.1.13", "192.168.1.36"]
+  mcControl = McControl(ips)
+
+  pifacedigital = pifacedigitalio.PiFaceDigital()
+
+  listener = pifacedigitalio.InputEventListener(chip=pifacedigital)
+  for i in range(4):
+      listener.register(i, pifacedigitalio.IODIR_ON, switch_pressed)
+  listener.activate()
+
+
+   
