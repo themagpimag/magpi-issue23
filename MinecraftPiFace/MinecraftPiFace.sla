@@ -451,115 +451,6 @@
             <ITEXT CH="Then save the file and create another file called mcControl.py,"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="#!/usr/bin/env python"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="from minecraft import Minecraft"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="import pifacedigitalio"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="from mcTraps import *"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="import time"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="def switch_pressed(event):"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    # Turn the PiFace LED on "/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    event.chip.output_pins[event.pin_num].turn_on()"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="   # Use the switch number to determine what should happen"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="   if  event.pin_num == 0:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      McControl.nextConnection()"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      return None"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="   # Get the current connection"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="   mc = McControl.getConnection()"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    if event.pin_num == 1:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      sandTrap(mc)"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    elif event.pin_num == 2:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      volcanoTrap(mc)"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    elif event.pin_num == 3:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      holeTrap(mc)"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    else:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="       raise Exception(&quot;ERROR: pin number is out of range.&quot;)"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="class McConnections:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  __init__(self, ips):"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="     self.ips = ips"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="     # Open connections with the Minecraft sessions"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    self.connections={}"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    for ip in ips:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      self.connections[ip] = Minecraft.create(ip)"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    self.connectionNumber = 0"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    self.numberOfConnection = len(ips)"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  nextConnection(self):"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      self.connectionNumber  = self.connectionNumber  + 1"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      if self.connectionNumber  &gt;= self.numberOfConnection:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="        self.connectionNumber  = 0"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      print(&quot;Using IP=%s&quot; % self.ips[self.connectionNumber])"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  getConnection(self):"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      return self.connections[self.ips[self.connectionNumber]])"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH=" "/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="    "/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="if __name__ == &quot;__main__&quot;:"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  # IP addresses of Minecraft users on the local area network"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  ips = [ &quot;192.168.1.13&quot;, &quot;192.168.1.36&quot;]"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  mcControl = McControl(ips)"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  pifacedigital = pifacedigitalio.PiFaceDigital()"/>
-            <para PARENT="Body text"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  listener = pifacedigitalio.InputEventListener(chip=pifacedigital)"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  for i in range(4):"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="      listener.register(i, pifacedigitalio.IODIR_ON, switch_pressed)"/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  listener.activate()"/>
-            <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <para PARENT="Body title"/>
             <ITEXT CH="   "/>
@@ -1026,6 +917,117 @@
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="1" PTYPE="6" XPOS="128.34708661126" YPOS="1284.54330704803" WIDTH="256.4354248" HEIGHT="67.4566929519667" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Minecraft_light_brown" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.435 0 256.435 0 256.435 0 256.435 0 256.435 67.4567 256.435 67.4567 256.435 67.4567 256.435 67.4567 0 67.4567 0 67.4567 0 67.4567 0 67.4567 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.435 0 256.435 0 256.435 0 256.435 0 256.435 67.4567 256.435 67.4567 256.435 67.4567 256.435 67.4567 0 67.4567 0 67.4567 0 67.4567 0 67.4567 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="11" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="128.34708661126" YPOS="1907" WIDTH="538.5883465" HEIGHT="656" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Minecraft_light_brown" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 656 538.588 656 538.588 656 538.588 656 0 656 0 656 0 656 0 656 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 656 538.588 656 538.588 656 538.588 656 0 656 0 656 0 656 0 656 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONTSIZE="9" CH="#!/usr/bin/env python"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="from minecraft import Minecraft"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="import pifacedigitalio"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="from mcTraps import *"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="import time"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="def switch_pressed(event):"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    # Turn the PiFace LED on "/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    event.chip.output_pins[event.pin_num].turn_on()"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="   # Use the switch number to determine what should happen"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="   if  event.pin_num == 0:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      McControl.nextConnection()"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      return None"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="   # Get the current connection"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="   mc = McControl.getConnection()"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    if event.pin_num == 1:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      sandTrap(mc)"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    elif event.pin_num == 2:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      volcanoTrap(mc)"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    elif event.pin_num == 3:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      holeTrap(mc)"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    else:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="       raise Exception(&quot;ERROR: pin number is out of range.&quot;)"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="class McConnections:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  __init__(self, ips):"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="     self.ips = ips"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="     # Open connections with the Minecraft sessions"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    self.connections={}"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    for ip in ips:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      self.connections[ip] = Minecraft.create(ip)"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    self.connectionNumber = 0"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    self.numberOfConnection = len(ips)"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  nextConnection(self):"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      self.connectionNumber  = self.connectionNumber  + 1"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      if self.connectionNumber  &gt;= self.numberOfConnection:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="        self.connectionNumber  = 0"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      print(&quot;Using IP=%s&quot; % self.ips[self.connectionNumber])"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  getConnection(self):"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      return self.connections[self.ips[self.connectionNumber]])"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH=" "/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="    "/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="if __name__ == &quot;__main__&quot;:"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  # IP addresses of Minecraft users on the local area network"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  ips = [ &quot;192.168.1.13&quot;, &quot;192.168.1.36&quot;]"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  mcControl = McControl(ips)"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  pifacedigital = pifacedigitalio.PiFaceDigital()"/>
+            <para PARENT="code"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  listener = pifacedigitalio.InputEventListener(chip=pifacedigital)"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  for i in range(4):"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="      listener.register(i, pifacedigitalio.IODIR_ON, switch_pressed)"/>
+            <para PARENT="code"/>
+            <ITEXT FONTSIZE="9" CH="  listener.activate()"/>
+            <trail PARENT="code"/>
             <PageItemAttributes/>
         </PAGEOBJECT>
     </DOCUMENT>
