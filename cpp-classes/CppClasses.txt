@@ -1,0 +1,47 @@
+Welcome back to the C++ Cache.  The subject of this month's article is the introduction of C++ classes.  Before continuing, it may be helpful to read previous C articles in Issue 3, 4, 5, 6, 9, 13 and 17, and previous C++ articles in Issues 7, 8, 10 and 18. 
+
+Object-orientated programming
+
+When programs become very large and there are many data structures associated with many different pieces of a program, then it can be helpful to associate particular functions with particular data structures.  In object-orientated programming, the basic building block of a program is an object.  An object can include functions and data members.  Object-orientated programming represents a different style of programming, where concepts are grouped together to match purposes.  For example, a car object could contain some variables such as the number of seats or the petrol left in the tank.  The car object could also contain a GPS function that returns the position of the car in space.
+
+Each object is instantiated, in a similar manner as a simple variable.  Instead of a simple type, an object is instantiated with a class.  In the case of a simple variable,
+
+ int i;
+
+the type is int and the variable is i.  An object can be instantiated using the Square class in a similar way,
+
+ Square s;
+
+Just as two int variables do not share the same memory location by default, two objects also do not share the same memory location by default.  This means that if a value inside an object is changed, it will not normally affect the values within another object of the same class.  When an object is instantiated, the associated constructor function described in the class declaration is called.  The constructor function can be used to initialise data members that belong to the class.
+
+
+A first C++ class
+
+Open a terminal window.  Then use a text editor, such as nano or emacs, to create a file called square.h.  Copy the code below into square.h and save the file.  
+
+The square.h header file contains the class declaration, where name of the class is Square.  The Square class contains two constructor functions, two other member functions,  and two data members.  The name of the constructor function must be the same as the name of the class.  The program uses the first constructor if no arguments are given and the second constructor if two values are provided.  If the object instantiation does not match either of these constructors, then the compiler will report an error.
+
+Headed files support limited functionality.  For example, it is possible to return a value from function that is declared in a header file.  In this case, the colour() function is declared and defined in the header file.  In contrast, the area() function is declared in the header file, but is does not implemented in the header file.  In this example, the implementation of the constructors and the area() function is given in a .cpp source file.
+
+Within a class declaration, functions and data members can be public, protected or private.  public members can be accessed from outside the class,   protected members can only be accessed by objects of the same class or of a derived class and private members can only be accessed by objects of the same class.  (The usefulness of protected members becomes clear once inheritance has been introduced.)  In the case of Square, all of the functions are public and both data members are private.
+
+The implementation of a class is given in the .cpp (or .cc or .cxx or .C) file.  Create a file called Square.cpp.  Then add the code found at the top of the next page and save the file.
+
+Since the Square.cpp file includes the implementation of functions that were defined in the class declaration, it has to include the class declaration itself.  This is included by including the header file   Square.h.  The cmath header file is needed to use the pow function, which is used to square the side.
+Below the include statements, the Square.cpp file contains the implementation of the three functions that were defined in the header file but were not implemented in the header file.  Each of the function names is prefixed by the class name and two colons.  The constructor functions do not have a declared return type, since they return an object of the given class. For other functions, the return type must be given to the left of the class name.  In this example, the type double is given before Square::area().  In the constructors, values can be assigned to data members using the parentheses notation given or with the assignment operator (=).  The data members act as global variables within the functions of the class.  Since they are both private data members, they are commonly prefixed with m_.  This is not a requirement, but a convention that makes reading C++ code a little simpler.
+
+The last part of this introduction is the use of the class Square.  Create a new file called main.cpp. Then add the code below and save the file.
+To use the class, the main.cpp file includes the header file Square.h.  Two objects are instantiated, where the first calls the default constructor and the second calls the second constructor.  Then the two functions are called and the values of the area and the colour (integer value) is printed on the screen.  When calling a function of a given object, the function name is prefixed with the object name.  In this example, the objects are created on the stack and go out of scope in the same way as a simple variable. These means that the two objects are destroyed when the function main finishes.
+
+Rather than type g++ several times, a Makefile can be used to compile the two .cpp files and produce an executable.  Create a new file called Makefile, add the code at the top of the next page and save the file.  The indented lines should be indented by a single tab, rather than spaces.  (More information on Makefiles is provided in  Issue 7 of the MagPi.)  The Makefile should be in the same directory as the Square.h, Square.cpp and main.cpp files.  Then type 
+
+ make
+
+to compile the code and build the executable.  Once the excutable has been build, run the program:
+
+ ./square
+
+
+Objects on the heap
+
+When an object is needed within several different functions calls, it might be helpful to create it on the heap instead.  The difference between creating an object on the stack and the heap is that objects on the stack are automatically cleaned up when they go out of scope, whereas the objects on the heap stay in memory.  To clean up an object on the heap, it has to be explicitly deleted.  The main.cpp is given below, using objects on the heap, where the syntax "s->colour()" is short hand for (*s).colour().
