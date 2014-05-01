@@ -1,8 +1,5 @@
-# W. H. Bell
-# A Makefile to build ParentChild
-
 CC=g++
-TARGET=ParentChild
+TARGET=pc
 OBJECTS=main.o Parent.o Child.o
 
 $(TARGET): $(OBJECTS)

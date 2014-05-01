@@ -1,20 +1,14 @@
-/* W. H. Bell
-** A simple program to introduce the concept of an object.
-*/
-
 #include <iostream>
 #include "Square.h"
 
 using namespace std;
 
 int main() {
-  //BasicParticle particle1(fourvector1);
-  //BasicParticle particle2(fourvector2);
+  Square s; // Using the default constructor
+  Square s2(3.0,'b'); // Using the second constructor 
 
-  //cout << "Mass of particle 1=" << particle1.getMass() << endl;
-  //cout << "pt of particle 1=" << particle1.getPt() << endl << endl;
-  //cout << "Mass of particle 2=" << particle2.getMass() << endl;
-  //cout << "pt of particle 2=" << particle2.getPt() << endl;
+  cout << "s.area()=" << s.area() << ", s.colour()=" << s.colour() << endl;
+  cout << "s2.area()=" << s2.area() << ", s2.colour()=" << s2.colour() << endl;
 
   return 0;
 }
