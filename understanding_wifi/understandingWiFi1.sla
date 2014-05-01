@@ -21,14 +21,14 @@
         <COLOR NAME="Red" RGB="#ff0000" Spot="0" Register="0"/>
         <COLOR NAME="Registration" CMYK="#ffffffff" Spot="0" Register="1"/>
         <COLOR NAME="Rich Black" CMYK="#996666ff" Spot="0" Register="0"/>
-        <COLOR NAME="Theme" CMYK="#a7960040" Spot="0" Register="0"/>
+        <COLOR NAME="Theme" CMYK="#a79c5e40" Spot="0" Register="0"/>
         <COLOR NAME="Warm Black" CMYK="#00994cff" Spot="0" Register="0"/>
         <COLOR NAME="White" CMYK="#00000000" Spot="0" Register="0"/>
         <COLOR NAME="Yellow" CMYK="#0000ff00" Spot="0" Register="0"/>
         <HYPHEN/>
         <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="0" LINESPMode="0" LINESP="15" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0"/>
         <STYLE NAME="TOC_Title_Style" FONT="FreeSans Bold" LANGUAGE="English"/>
-        <STYLE NAME="Body text" ALIGN="3" LINESP="16" FONTSIZE="11" LANGUAGE="English"/>
+        <STYLE NAME="Body text" ALIGN="3" LINESP="16" FONTSIZE="12" LANGUAGE="English"/>
         <STYLE NAME="Body sub-title" FONT="FreeSans Bold Oblique" FONTSIZE="13" LANGUAGE="English"/>
         <STYLE NAME="Body title" FONT="FreeSans Bold" FONTSIZE="14" LANGUAGE="English"/>
         <STYLE NAME="Code" LINESP="13" FONT="Monaco Regular" FONTSIZE="10" LANGUAGE="English"/>
@@ -213,7 +213,7 @@
             <ITEXT CH="In this series of articles, a WiFi network will be needed.  This could be provided by a home router or wireless access point.  Make sure that you either own the wireless access point or have explicit permission from the owner to perform some packet sniffing experiments.  Do not use the techniques discussed in this series, unless you have explicit permission from the wireless access point owner/WiFi system administrator."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Equipment needed"/>
+            <ITEXT CH="Equipment needed and configuration"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
             <ITEXT CH="For this article series, a Raspberry Pi, USB WiFi dongle and a packet of Pingles is needed."/>
@@ -221,63 +221,52 @@
             <ITEXT CH="[Ed.: need USB WiFi recommendations.  Is anything else needed in terms of hardware?]"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="RASPBERRYSPI Set Up"/>
+            <ITEXT CH="Start from the most recent Raspbian image.  Make sure that the image is up to date,"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Let's start with a clean new Raspbian distribution.  Enter as user 'pi' and use the raspi-config program  to change your password.  Whilst you are in this program:-"/>
+            <ITEXT CH=" sudo apt-get update"/>
+            <para PARENT="Code"/>
+            <ITEXT CH=" sudo apt-get upgrade -y"/>
+            <para PARENT="Code"/>
+            <para PARENT="Body text"/>
+            <ITEXT CH="Change the default password for the used pi to something more secure.  For this tutorial, the default behaviour of booting to the console is fine.  The ssh daemon needs to be enabled, which is the default."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <tab/>
-            <ITEXT CH="a) ensure the Pi boots directly to the console"/>
-            <para PARENT="Body text"/>
-            <tab/>
-            <ITEXT CH="b) turn on the camera support "/>
-            <para PARENT="Body text"/>
-            <tab/>
-            <ITEXT CH="c) enable sshd (for remote control later)"/>
-            <para PARENT="Body text"/>
-            <tab/>
-            <ITEXT CH="d) select a name for your machine"/>
-            <para PARENT="Body text"/>
-            <tab/>
-            <tab/>
-            <ITEXT CH="– I'm going to use 'ete'."/>
+            <ITEXT CH="A lot of the network tools that are used in this article require root user privileges.  Therefore, typing sudo in front of each command can become tiresome.  After logging in as the user pi, a new shell can be started as root by typing:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Before you reboot enter the following:-"/>
+            <ITEXT CH=" sudo -s"/>
+            <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="pi@raspberrypi &gt; sudo passwd root"/>
+            <ITEXT CH="To exit the root shell, type: "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Enter, confirm and remember a very strong password for the user 'root' as this is the user we are going to operate as."/>
+            <ITEXT CH=" exit"/>
+            <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH=" Note:- Many Linux Taliban dislike operating as user 'root'.  It is, by default, the most powerful user in Linux and used without great care can be disastrous (I know) but we need as much power as we can muster! Prepare to be nimble and live on the edge – remember Eddie The Eagle'."/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="  Enter user root and your new password when you reboot.  To ensure we are as up-to-date as possible (as we don't want to get caught out running old software) enter:-"/>
+            <ITEXT CH="While using the root shell be careful, since the root user can remove or overwrite important system files."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="root@ete &gt; apt-get update"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Updating can take some time but once it is complete we can take our first action building a Wi-Fi sniffer."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="RASPBERRYSPI Wi-Fi Sniffer"/>
+            <ITEXT CH="WiFi Sniffer"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="We are surrounded by low power, short range, 'Wi-Fi', microwave. radio signals – packed with interesting communications.  All we need to sniff them is a small USB Wi-Fi dongle.  Although these dongles are small and only cost a few pounds they are packed with high technology.."/>
+            <ITEXT CH="To sniff your WiFi network or a network that you have explicit privilege to sniff is relatively straightforward.  All that is needed is a small USB WiFi dongle, whic can be either connected directly to the Raspberry Pi or via a powered hub.   Although these dongles are small and only cost a few pounds they are packed with high technology.."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Twenty five years ago when I first started designing this type of equipment it was difficult to fit the electronics into something the size of a very large box of matches, today everything fits onto a board almost the same size as the USB connector!"/>
+            <ITEXT CH="Twenty five years ago, when I first started designing this type of equipment it was difficult to fit the electronics into something the size of a very large box of matches, today everything fits onto a board almost the same size as the USB connector!"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" Initially, this dongle should be plugged directly into your Pi – keep the keyboard but remove any mouse as it's is not necessary here. We are not going to use the GUI interface, once again, we need more power and don't want to waste any running a pretty, but limited, graphical interface."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="RASPBERRYSPI Testing your Wi-Fi Dongle"/>
+            <ITEXT CH="Testing a WiFi dongle"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="All Wi-Fi dongles are not the same. They differ in performance based upon the IC chips used in their design. You can assess details about the capability of your Wi-Fi dongle by installing a small testing program:-  "/>
+            <ITEXT CH="All Wi-Fi dongles are not the same. They differ in performance based upon the IC chips used in their design. You can assess details about the capability of your WiFi dongle by installing a small testing program:-  "/>
             <para PARENT="Body text"/>
             <ITEXT CH=" root@ete &gt; apt-get  install iwconfig"/>
             <para PARENT="Body text"/>
@@ -312,16 +301,21 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Kismet (=fate) is the wireless network detector of choice we are going to install here.  Downloading and installing it can take a little time. At the time of writing I've had problems using 'apt-get' or 'aptitude' to install the latest version of Kismet reliably.  This alternative route is more reliable but can take up to an hour.  First we need to install some supporting code.  Enter as one continuous line or package by package, as shown:- "/>
             <para PARENT="Body text"/>
-            <ITEXT CH=" root@ete &gt; apt-get install libncurses5-dev "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="root@ete &gt; apt-get install libpcap-dev"/>
+            <ITEXT CH="sudo apt-get install libncurses5-dev \"/>
+            <para PARENT="Code"/>
+            <ITEXT CH="libpcap-dev install libpcre3-dev \"/>
+            <para PARENT="Code"/>
+            <ITEXT CH="libnl-3-dev libnl-genl-3-dev         "/>
+            <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="root@ete &gt; apt-get install libpcre3-dev "/>
+            <ITEXT CH="Next we need to download the Kismet code. "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="root@ete &gt; apt-get install libnl-3-dev "/>
+            <ITEXT CH="Enter all of the following on single line. The only space is between the command wget and the link."/>
             <para PARENT="Body text"/>
-            <ITEXT CH="root@ete &gt; apt-get install libnl-genl-3-dev          "/>
             <para PARENT="Body text"/>
+            <ITEXT CH="wget http://www.kismetwireless.net /code/kismet-2013-03-R1b.tar.gz"/>
+            <para PARENT="Code"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Kismet requires a place to store details enter:-"/>
             <para PARENT="Body text"/>
@@ -330,13 +324,7 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Remember this. Kismet also requires a few changes need to be made to your Pi to configure the dongle correctly. "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="     Next we need to download the Kismet code. "/>
-            <para PARENT="Body text"/>
-            <ITEXT CH="Enter all of the following on single line. The only space is between the command wget and the link."/>
-            <para PARENT="Body text"/>
-            <ITEXT CH=" root@ete &gt;wget http://www.kismetwireless.net           "/>
-            <tab/>
-            <ITEXT CH="       /code/kismet-2013-03-R1b.tar.gz"/>
+            <ITEXT CH="     "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="There are plenty of opportunities for typing mistakes here but when entered correctly the download is confirmed by a bar progressing across the screen.    The downloaded file needs decompressing:-"/>
