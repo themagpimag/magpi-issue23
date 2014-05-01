@@ -1,24 +1,17 @@
-# W. H. Bell
-# A Makefile to build Particles.exe
-
 CC=g++
-TARGET=Particles
-OBJECTS=main.o BasicParticle.o
+TARGET=square
+OBJECTS=main.o Square.o
 
-$(TARGET).exe: $(OBJECTS)
-	@echo "**"
+$(TARGET): $(OBJECTS)
 	@echo "** Linking Executable"
-	@echo "**"
-	$(CC) $(OBJECTS) -o $(TARGET).exe
+	$(CC) $(OBJECTS) -o $(TARGET)
 
 clean:
 	@rm -f *.o *~
 
 veryclean: clean
-	@rm -f $(TARGET).exe
+	@rm -f $(TARGET)
 
-%.o: %.cc
-	@echo "**"
+%.o: %.cpp
 	@echo "** Compiling C++ Source" 
-	@echo "**"
 	$(CC) -c $(INCFLAGS) $< 
