@@ -132,21 +132,21 @@
             <ITEXT FONTSIZE="9" CH=" pip install BrickPi"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="To use the serial port to communicate with the BrickPi, it has to be available as an input/output (I/O) connection.  To allow a connection using the serial bus, the Raspbian configuration needs to be changed slightly.  Type,"/>
+            <ITEXT CH="To use the serial port to communicate with the BrickPi, it has to be available as an input/output (I/O) connection.  To allow a connection using the serial bus, the Raspbian configuration needs to be changed slightly.  Type:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" sudo -s"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="and then use the  nano editor to edit "/>
+            <ITEXT CH="Then use the  nano editor to edit "/>
             <ITEXT FONT="Monaco Regular" CH="/boot/config.txt"/>
-            <ITEXT CH=","/>
+            <ITEXT CH=":"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" nano /boot/config.txt"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Go the end of the file and add,"/>
+            <ITEXT CH="Go the end of the file and add:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT FONTSIZE="9" CH=" init_uart_clock=32000000"/>
@@ -170,7 +170,7 @@
             <ITEXT FONTSIZE="9" CH=" console=ttyAMA0,115200 kgdboc=ttyAMA0,115200"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="and save the file.  Now reboot the Raspberry Pi,"/>
+            <ITEXT CH="and save the file.  Now reboot the Raspberry Pi:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="  reboot"/>
@@ -192,7 +192,7 @@
             <ITEXT FONT="Monaco Regular" CH="MB"/>
             <ITEXT CH=".  Finally, add a forward-facing ultrasonic sensor and connect it to BrickPi sensor port "/>
             <ITEXT FONT="Monaco Regular" CH="S1"/>
-            <ITEXT CH=".  The BrickPi port labelling is given in the MagPi Issue 18 article on the BrickPi."/>
+            <ITEXT CH=".  The BrickPi port labelling is given in The MagPi Issue 18 article on the BrickPi."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Human controlled tank"/>
@@ -203,7 +203,7 @@
             <ITEXT CH=" that contains:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Now open Scratch and enable remote sensor connections, by selecting the &quot;Sensing&quot; palette and right clicking on &quot;sensor value&quot; at the bottom of the tool palette.  (For the current Raspbian version of Scratch, the remote sensor connections need to be disabled and then re-enabled.)  Now start RpiScratchIO by typing,"/>
+            <ITEXT CH="Now open Scratch and enable remote sensor connections, by selecting the &quot;Sensing&quot; palette and right clicking on &quot;sensor value&quot; at the bottom of the tool palette.  (For the current Raspbian version of Scratch, the remote sensor connections need to be disabled and then re-enabled.)  Now start RpiScratchIO by typing:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" RpiScratchIO tank.cfg"/>
@@ -284,7 +284,7 @@
             <para PARENT="Body text"/>
             <ITEXT CH="The BrickPiScratch interface can be easily used to control the position of the tank, using the keyboard.  In this example, a simple top view of a tank was used as the main sprite.  "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Then two spirites were made, one for each track of the vehicle.  The main sprite was then linked to the ultrasonic sensor and each track was linked to a motor.  The main sprite program,"/>
+            <ITEXT CH="Then two sprites were made, one for each track of the vehicle.  The main sprite was then linked to the ultrasonic sensor and each track was linked to a motor.  The main sprite program,"/>
             <para PARENT="Body text"/>
             <ITEXT CH="sends a read command to read the ultrasonic sensors, waits for half a second and then prints the value of the sensor.  The value of the sensor is also used to change the costume of the main sprite, to indicate if there is an object close by."/>
             <para PARENT="Body text"/>
@@ -296,7 +296,7 @@
             <ITEXT FONT="Monaco Regular" CH="a"/>
             <ITEXT CH=" key is held down.  When the key is released, the motor stops.  To make the motor go backwards, the "/>
             <ITEXT FONT="Monaco Regular" CH="z"/>
-            <ITEXT CH=" key should be held down.  When the motor is running forwards or backwards, the track spirite colour changes to show that the motor is running.  The right track program is the same, but with the "/>
+            <ITEXT CH=" key should be held down.  When the motor is running forwards or backwards, the track sprite colour changes to show that the motor is running.  The right track program is the same, but with the "/>
             <ITEXT FONT="Monaco Regular" CH="d"/>
             <ITEXT CH=" and "/>
             <ITEXT FONT="Monaco Regular" CH="x"/>
@@ -306,13 +306,13 @@
             <ITEXT CH="Data acquisition &amp; limits"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="To understand the limits of the Scratch driver, it is helpful to know what is happening within the driver and the BrickPi itself.  The BrickPi Scratch diver is written in Python and communicates between Scratch and the BrickPi.  If the Scratch driver sent the BrickPi a single motor controller command, the BrickPi would run the associated motor for about one second and then stop.  This design choice was make  in the Brick itself to prevent run-away robots.  To make the Scratch programs more efficient and simpler, the Scratch driver starts a data acquistion loop with the BrickPi that runs every tenth of a second.  This loop sends the current motor values to the BrickPi and retrieves the current sensor values for the sensors that are enabled in the configuration file.  The current values for the sensors and motor encoders are stored in the BrickPi Scratch driver.  In this manner, the Scratch code can send a single value to the scratch driver and see quick updates of motor values."/>
+            <ITEXT CH="To understand the limits of the Scratch driver, it is helpful to know what is happening within the driver and the BrickPi itself.  The BrickPi Scratch diver is written in Python and communicates between Scratch and the BrickPi.  If the Scratch driver sent the BrickPi a single motor controller command, the BrickPi would run the associated motor for about one second and then stop.  This design choice was make  in the Brick itself to prevent run-away robots.  To make Scratch programs more efficient and simpler, the Scratch driver starts a data acquisition loop with the BrickPi that runs every tenth of a second.  This loop sends the current motor values to the BrickPi and retrieves the current sensor values for the sensors that are enabled in the configuration file.  The current values for the sensors and motor encoders are stored in the BrickPi Scratch driver.  In this manner, the Scratch code can send a single value to the scratch driver and see quick updates of motor values."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Scratch running on a Raspberry Pi cannot recieve sensor updates faster than approximately half a second.  While requesting a value and then receiving it completely decouples Scratch from the fast data acquisition loop inside the Scratch driver, it also uses more processor time.  This is a good choice for monitoring long term changes, but does not work well for an autonomous projects."/>
+            <ITEXT CH="Scratch running on a Raspberry Pi cannot receive sensor updates faster than approximately half a second.  While requesting a value and then receiving it completely decouples Scratch from the fast data acquisition loop inside the Scratch driver, it also uses more processor time.  This is a good choice for monitoring long term changes, but does not work well for autonomous projects."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="To reach the limit of Scratch I/O and performance, the BrickPi scratch driver can be used to send regular sensor updates to Scratch.  This has two implications: (i) reduced number of broadcast mesages and (ii) the ability to trigger Scratch from the automatic readout.  Both of these changes, make sure the Scratch communication is as efficient as possible."/>
+            <ITEXT CH="To reach the limit of Scratch I/O and performance, the BrickPi Scratch driver can be used to send regular sensor updates to Scratch.  This has two implications: (1) reduced number of broadcast messages and (2) the ability to trigger Scratch from the automatic readout.  Both of these changes ensure that the Scratch communication is as efficient as possible."/>
             <para PARENT="Body text"/>
             <ITEXT CH=" "/>
             <para PARENT="Body text"/>
@@ -343,13 +343,13 @@
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Close the previous Scratch window and open a new one.  Setup the remote sensor connections as before.  Then type,"/>
+            <ITEXT CH="Close the previous Scratch window and open a new one.  Set up the remote sensor connections as before.  Then type,"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" RpiScratchIO autoTank.cfg"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="This time, the Scratch setup contains only one Spirite.  The program for the sprite is given below and on the next page."/>
+            <ITEXT CH="This time, the Scratch setup contains only one sprite.  The program for the sprite is given below and on the next page."/>
             <para PARENT="Body text"/>
             <ITEXT CH="When the green flag is clicked, the tank changes its costume to indicate that the automatic sensor update loop is running.  The local (&quot;For this sprite only&quot;) variable "/>
             <ITEXT FONT="Monaco Regular" CH="US"/>
@@ -359,7 +359,7 @@
             <ITEXT FONT="Monaco Regular" CH="LEGO:11"/>
             <ITEXT CH=" are all set to zero.  Then the "/>
             <ITEXT FONT="Monaco Regular" CH="config:period,5"/>
-            <ITEXT CH=" command is sent to start the automatic updates, which then run once every 0.5 of a second."/>
+            <ITEXT CH=" command is sent to start the automatic updates, which then run once every half a second."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Each time the sensors are automatically updated, a "/>
@@ -368,7 +368,7 @@
             <ITEXT FONT="Monaco Regular" CH="LEGO:trig"/>
             <ITEXT CH=" message is used to run the three sections that follow, where the first section stores the sensor value in the "/>
             <ITEXT FONT="Monaco Regular" CH="US"/>
-            <ITEXT CH=" variable and the other two seconds control the two motors.  When the "/>
+            <ITEXT CH=" variable and the other two sections control the two motors.  When the "/>
             <ITEXT FONT="Monaco Regular" CH="LEGO:10"/>
             <ITEXT CH=" or "/>
             <ITEXT FONT="Monaco Regular" CH="LEGO:11"/>
@@ -707,11 +707,11 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="411" YPOS="2857.48157480316" WIDTH="255.935433070867" HEIGHT="448.305826771652" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.7" LOCALSCY="0.7" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="screenshots/autoTank.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 448.306 255.935 448.306 255.935 448.306 255.935 448.306 0 448.306 0 448.306 0 448.306 0 448.306 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 448.306 255.935 448.306 255.935 448.306 255.935 448.306 0 448.306 0 448.306 0 448.306 0 448.306 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="411" YPOS="2857.48157480316" WIDTH="255.935433070867" HEIGHT="448.305826771652" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.7" LOCALSCY="0.7" LOCALX="52.6434195725534" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="screenshots/autoTank.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 448.306 255.935 448.306 255.935 448.306 255.935 448.306 0 448.306 0 448.306 0 448.306 0 448.306 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 448.306 255.935 448.306 255.935 448.306 255.935 448.306 0 448.306 0 448.306 0 448.306 0 448.306 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="4" PTYPE="2" XPOS="128.347086614173" YPOS="3579.75" WIDTH="255.9354331" HEIGHT="392" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.7" LOCALSCY="0.7" LOCALX="3.5770528685714" LOCALY="-641.205061908882" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="screenshots/autoTank.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 392 255.935 392 255.935 392 255.935 392 0 392 0 392 0 392 0 392 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 392 255.935 392 255.935 392 255.935 392 0 392 0 392 0 392 0 392 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="4" PTYPE="2" XPOS="128.347086614173" YPOS="3579.75" WIDTH="255.9354331" HEIGHT="392" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.7" LOCALSCY="0.7" LOCALX="52.1696287964005" LOCALY="-641.204949381327" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="screenshots/autoTank.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 392 255.935 392 255.935 392 255.935 392 0 392 0 392 0 392 0 392 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 255.935 0 255.935 0 255.935 0 255.935 0 255.935 392 255.935 392 255.935 392 255.935 392 0 392 0 392 0 392 0 392 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="13" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -740,6 +740,10 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="492" WIDTH="208.652913385827" HEIGHT="20" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="http://elinux.org/RPi_Low-level_peripherals" ANZIEL="0" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANNAME="Text84" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 208.653 0 208.653 0 208.653 0 208.653 0 208.653 20 208.653 20 208.653 20 208.653 20 0 20 0 20 0 20 0 20 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 208.653 0 208.653 0 208.653 0 208.653 0 208.653 20 208.653 20 208.653 20 208.653 20 0 20 0 20 0 20 0 20 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="128.347086614173" YPOS="3400" WIDTH="173.652913385827" HEIGHT="19" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="1" ANTYPE="11" ANACTION="" ANEACT="" ANXACT="" ANDACT="" ANFOACT="" ANBLACT="" ANKACT="" ANFACT="" ANVACT="" ANCACT="" ANEXTERN="https://pypi.python.org/pypi/BrickPi" ANZIEL="3" ANACTYP="8" ANTOOLTIP="" ANBWID="1" ANBSTY="0" ANFEED="1" ANFLAG="0" ANFONT="4" ANFORMAT="0" ANROLL="" ANDOWN="" ANVIS="0" ANMC="-1" ANCHK="0" ANAA="0" ANCHKS="0" ANBCOL="Black" ANHTML="0" ANICON="0" ANPLACE="1" ANSCALE="0" ANNAME="Text83" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 173.653 0 173.653 0 173.653 0 173.653 0 173.653 19 173.653 19 173.653 19 173.653 19 0 19 0 19 0 19 0 19 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 173.653 0 173.653 0 173.653 0 173.653 0 173.653 19 173.653 19 173.653 19 173.653 19 0 19 0 19 0 19 0 19 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>

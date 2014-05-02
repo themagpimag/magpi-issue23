@@ -1,84 +1,121 @@
 Introduction
 
-The BrickPi provides an interface between LEGO Mindstorms motors and sensors and the Raspberry Pi.  The board has five sensor ports and four motor ports.  The Raspberry Pi communicates with the BrickPi over the serial port, which is available via the 26pin header on the Raspberry Pi.  The BrickPi is able to read both the sensors and the motor encoder values, providing a simple interface to a range of Mindstorm based projects.  More details of the BrickPi are given in Issues 17 and 18 of the MagPi.  This article covers a new Scratch driver for the BrickPi and packaging for the BrickPi Python interface.
+The BrickPi provides an interface between LEGO® MINDSTORMS® motors and sensors and the Raspberry Pi.  The board has five sensor ports and four motor ports.  The Raspberry Pi communicates with the BrickPi over the serial port (UART), which is available via pins 8 and 10 of the 26 pin header on the Raspberry Pi:
+http://elinux.org/RPi_Low-level_peripherals
 
-A local school decided to buy several BrickPi boards, for their engineering course.  After a few tests, it was clear that a new Scratch driver was needed to allow the BrickPi to be used within the course material.  To allow other Raspberry Pi buses to be used and provide easy configuration of the BrickPi, RpiScratchIO was chosen as the Scratch interface.  More information on RpiScratchIO can be found in Issues 20 and 22 of the MagPi and at http:///.
+The BrickPi is able to read both the sensors and the motor encoder values, providing a simple interface to a range of MINDSTORMS® based projects.  More details of the BrickPi are given in Issues 17 and 18 of The MagPi. 
 
-Installation
-
-While it should be possible to use this Scratch driver with the BrickPi SD card image, these installation instructions start from a regular Raspbian SD card image.  Once Raspbian has been installed, create a file called update-install.sh :
-
-#!/bin/bash
-#
-# sudo ./update-install.sh
-
-apt-get update
-apt-get upgrade -y
-apt-get install -y python-serial python-setuptools python-dev
-easy_install pip
-pip install BrickPi
-
-# Config.
-echo "init_uart_clock=32000000" >> /boot/config.txt
-sed 's/T0:23/#T0:23/g' /etc/inittab > t
-mv t /etc/inittab
-sed 's/console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 //g' /boot/cmdline.txt > t
-mv t /boot/cmdline.txt
-ls -l /boot/config.txt /etc/inittab /boot/cmdline.txt
+A local school decided to buy several BrickPi boards, for their engineering course.  After a few tests, it was clear that a new Scratch driver was needed to allow the BrickPi to be used within the course material.  To allow other Raspberry Pi GPIO connections to be used and provide easy configuration of the BrickPi, RpiScratchIO was chosen as the basis of the Scratch interface.  More information on RpiScratchIO can be found in Issues 20 and 22 of The MagPi and at:
+https://pypi.python.org/pypi/RpiScratchIO/
 
 
-Then set the script as executable and run it as root:
+Installation & configuration
 
-chmod 755 update-install.sh
-sudo ./update-install.sh
+These installation instructions start from the basic Raspbian image that can be downloaded from the Raspberry Pi web site:
+http://www.raspberrypi.org/downloads/
 
-The script will update Raspbian, install BrickPi and its dependencies, and configure the serial port.  (In future versions of the BrickPi package, this script may become part of package itself.)
+The BrickPi Python and Scratch interfaces are available as a Python module.  To install both interfaces, together with their dependencies, open a terminal window and type:
 
-Scratch tank
+ sudo apt-get install -y python-serial \
+ python-setuptools python-dev
+ easy_install pip
+ pip install BrickPi
 
-The BrickPi has to be appropriately configured for each different LEGO sensor.  This means that the correct integer value should to be passed to the Python driver.  This can be easily achieved with a new field in the RpiScratchIO configuration file.  Create a new file called tank.cfg that contains:
+To use the serial port to communicate with the BrickPi, it has to be available as an input/output (I/O) connection.  To allow a connection using the serial bus, the Raspbian configuration needs to be changed slightly.  Type:
 
-[DeviceTypes]
-LEGO = import BrickPi; from BrickPi.BrickPiScratch import BrickPiScratch; BrickPiScratch()
+ sudo -s
 
-[DeviceConnections]
-LEGO = UART0
+Then use the  nano editor to edit /boot/config.txt:
 
-[BrickPi]
-S1 = ULTRASONIC_CONT
-MA =
-MB =
+ nano /boot/config.txt
 
-This file creates an instance of the BrickPiScratch Python class, assigns it the serial port, and declares the connection of an ultrasonic sensor and two motors to the BrickPi.
+Go the end of the file and add:
 
-Connect a LEGO Mindstorms motor to MA and MB.  These motors will drive the tracks of the tank.  Then connect a LEGO utrasonic sensor to S1.  The BrickPi port labelling is given in the MagPi Issue 18 article on the BrickPi.  It is probably a good idea to use a label maker or some Tipex to mark the top of each port on the BrickPi.
+ init_uart_clock=32000000
 
-Now open Scratch and enable the remote sensor connections, by selecting the "Sensing" palette and right clicking on "sensor value" at the bottom of the tool palette.  (For the current Raspbian version of Scratch, the remote sensor connections need to be disabled and then re-enabled.)  Now start RpiScratchIO by typing
+Then save this file and open /etc/inittab.  Find 
 
-RpiScratchIO tank.cfg
+ T0:23 
 
-This will create new Scratch sensors with the ranges LEGO:0-LEGO:3, LEGO:10-LEGO:13 and LEGO:20-LEGO:23, where LEGO:0-LEGO:3 are the sensor ports S1-S4, LEGO:10-LEGO:13 correspond to the values written to the four motor ports MA-MB and LEGO:20-LEGO:23 are the motor encoders for MA-MB.  The sensors S1-S4 and the motor encoder MA-MB values can be updated in Scratch by broadcasting read commands.  For example,
+and put a # character in front, to comment it out.  Then save it.  Next, open /boot/cmdline.txt and remove
 
-LEGO:read:0
+ console=ttyAMA0,115200 kgdboc=ttyAMA0,115200
 
-will transfer the current S1 value into the Scratch sensor LEGO:0.  The motor speed can be changed by broadcasting a write command:
+and save the file.  Now reboot the Raspberry Pi:
 
-LEGO:write:0,255
-
-This will set the motor connected to MA to run at full speed.  To stop the motor again, use Scratch to broadcast
-
-LEGO:write:0,0
-
-If a sensor channel is used that has not been configured in the RpiScratchIO file, then a warning will be reported.  To update the sensors that are active in Scratch: exit RpiScratchIO by typing CTRL-C, edit the RpiScratchIO configuration file and then restart RpiScratchIO as before.
-
-The example program below uses three sprites, to indicate when each track is running and how close objects are to the ultrasonic sensor.
-
-The LEGO model used for this build was based on the current version of:
-
-Some modifications were needed to mount the tracks and sensor on the model.  The finished robot is shown below:
-
-Debugging
-
-Do not run more than one Scratch window at once.  When Scratch is running with remote sensor connections enabled it is a server process.  The server process runs on port XXX.  Running more than one Scratch window with remote connections enabled will cause the first process to receive the sensor updates.
+  reboot
 
 
+Building the tank
+
+Follow the instructions given at,
+http://www.dexterindustries.com/BrickPi/projects/
+tank/
+to build a tracked vehicle.  Then put the BrickPi on top and connect the right motor to BrickPi port MA and the left motor to BrickPi port MB.  Finally, add a forward-facing ultrasonic sensor and connect it to BrickPi sensor port S1.  The BrickPi port labelling is given in The MagPi Issue 18 article on the BrickPi.
+
+Human controlled tank
+
+The BrickPi has to be appropriately configured for each different LEGO® sensor.  Create a new file called tank.cfg that contains:
+
+Now open Scratch and enable remote sensor connections, by selecting the "Sensing" palette and right clicking on "sensor value" at the bottom of the tool palette.  (For the current Raspbian version of Scratch, the remote sensor connections need to be disabled and then re-enabled.)  Now start RpiScratchIO by typing:
+
+ RpiScratchIO tank.cfg
+
+This creates new Scratch sensors with names within the ranges LEGO:0-LEGO:3, LEGO:10-LEGO:13 and LEGO:20-LEGO:23, where LEGO:0-LEGO:3 are the sensor ports S1-S4, LEGO:10-LEGO:13 correspond to the values written to the four motor ports MA-MB and LEGO:20-LEGO:23 are the motor encoders for MA-MB.  The sensor (S1-S4) and the motor encoder (MA-MB) values can be updated in Scratch by broadcasting read commands.  For example,
+
+ LEGO:read:0
+
+transfers the current S1 value into the Scratch sensor LEGO:0.  The motor speed can be changed by broadcasting a write command:
+
+ LEGO:write:10,255
+
+where this sets the motor connected to MA to run forwards at full speed.  To stop the motor attached to MA, use Scratch to broadcast:
+
+ LEGO:write:10,0
+
+If a sensor channel is used that has not been configured in the configuration file, then a warning is reported.  To update the sensors that are active in Scratch, exit RpiScratchIO by typing CTRL-C, edit the RpiScratchIO configuration file and then restart RpiScratchIO as before.
+
+The BrickPiScratch interface can be easily used to control the position of the tank, using the keyboard.  In this example, a simple top view of a tank was used as the main sprite.  
+Then two sprites were made, one for each track of the vehicle.  The main sprite was then linked to the ultrasonic sensor and each track was linked to a motor.  The main sprite program,
+sends a read command to read the ultrasonic sensors, waits for half a second and then prints the value of the sensor.  The value of the sensor is also used to change the costume of the main sprite, to indicate if there is an object close by.
+
+
+The program for the left motor,
+sets the motor to run forward when the a key is held down.  When the key is released, the motor stops.  To make the motor go backwards, the z key should be held down.  When the motor is running forwards or backwards, the track sprite colour changes to show that the motor is running.  The right track program is the same, but with the d and x keys and the motor channel 10.
+
+Data acquisition & limits
+
+To understand the limits of the Scratch driver, it is helpful to know what is happening within the driver and the BrickPi itself.  The BrickPi Scratch diver is written in Python and communicates between Scratch and the BrickPi.  If the Scratch driver sent the BrickPi a single motor controller command, the BrickPi would run the associated motor for about one second and then stop.  This design choice was make  in the Brick itself to prevent run-away robots.  To make Scratch programs more efficient and simpler, the Scratch driver starts a data acquisition loop with the BrickPi that runs every tenth of a second.  This loop sends the current motor values to the BrickPi and retrieves the current sensor values for the sensors that are enabled in the configuration file.  The current values for the sensors and motor encoders are stored in the BrickPi Scratch driver.  In this manner, the Scratch code can send a single value to the scratch driver and see quick updates of motor values.
+
+Scratch running on a Raspberry Pi cannot receive sensor updates faster than approximately half a second.  While requesting a value and then receiving it completely decouples Scratch from the fast data acquisition loop inside the Scratch driver, it also uses more processor time.  This is a good choice for monitoring long term changes, but does not work well for autonomous projects.
+
+To reach the limit of Scratch I/O and performance, the BrickPi Scratch driver can be used to send regular sensor updates to Scratch.  This has two implications: (1) reduced number of broadcast messages and (2) the ability to trigger Scratch from the automatic readout.  Both of these changes ensure that the Scratch communication is as efficient as possible.
+ 
+Autonomous tank
+
+A human controlled vehicle is amusing, but a true robot should be able to function on its own.  To make decisions, the sensor updates within Scratch have to be as fast as possible.  This can be achieved by turning on the automatic update mechanism in the BrickPi Scratch driver.  Copy the tank.cfg file and rename it as autoTank.cfg.  Then change
+
+ BrickPiScratch()
+
+to
+
+ BrickPiScratch(0,"s")
+
+The number zero is the period of the automatic update in units of tenths of a second, where zero disables the automatic update of sensor values.  The value "s" configures all active sensors to be automatically updated.  Other options are given at: https://pypi.python.org/pypi/BrickPi   
+
+
+Close the previous Scratch window and open a new one.  Set up the remote sensor connections as before.  Then type,
+
+ RpiScratchIO autoTank.cfg
+
+This time, the Scratch setup contains only one sprite.  The program for the sprite is given below and on the next page.
+When the green flag is clicked, the tank changes its costume to indicate that the automatic sensor update loop is running.  The local ("For this sprite only") variable US and global ("For all sprites") variables LEGO:10 and LEGO:11 are all set to zero.  Then the config:period,5 command is sent to start the automatic updates, which then run once every half a second.
+
+Each time the sensors are automatically updated, a LEGO:trig message is sent to Scratch.  The LEGO:trig message is used to run the three sections that follow, where the first section stores the sensor value in the US variable and the other two sections control the two motors.  When the LEGO:10 or LEGO:11 values are updated, they are automatically sent to the BrickPi channels MA and MB respectively.
+
+The last section is only run when the q key is pressed on the keyboard, which stops the automatic updates.  The program then waits, in case one motor command is still being processed.  Then the costume is set back to normal and both motors are stopped.
+
+Try pointing the robot at a smooth wall and clicking on the green flag.  When the wall is far away, the motors will run at high speed.  Then the robot will slow down and finally stop.
+
+
+LEGO® is a trademark of the LEGO Group of companies which does not sponsor, authorize or endorse this site  
