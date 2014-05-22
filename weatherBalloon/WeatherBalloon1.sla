@@ -52,10 +52,10 @@
         <LAYERS NUMMER="12" LEVEL="4" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#ff6470"/>
         <LAYERS NUMMER="13" LEVEL="8" NAME="Image" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#ffaa00"/>
         <Printer firstUse="1" toFile="1" useAltPrintCommand="1" outputSeparations="0" useSpotColors="0" useColor="1" mirrorH="1" mirrorV="0" useICC="0" doGCR="1" doClip="1" setDevParam="0" useDocBleeds="0" cropMarks="1" bleedMarks="1" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PDLanguage="3" markOffset="3.74231782764791e-308" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="" filename="" separationName="" printerCommand=""/>
-        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="1" Quality="2" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="1" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="CineonLog M " ImageP="CineonLog M " PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="1" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
-            <Fonts Name="Monaco Regular"/>
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="CineonLog M " ImageP="CineonLog M " PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="1" bleedMarks="1" registrationMarks="1" colorMarks="1" docInfoMarks="1" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="1" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
             <Subset Name="FreeSans Bold"/>
             <Subset Name="FreeSans Regular"/>
+            <Subset Name="Monaco Regular"/>
             <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
             <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
             <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
@@ -191,7 +191,7 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="272.25" YPOS="70.2047271728516" WIDTH="421.75" HEIGHT="42.3398361206055" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Bold" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 421.75 0 421.75 0 421.75 0 421.75 0 421.75 42.3398 421.75 42.3398 421.75 42.3398 421.75 42.3398 0 42.3398 0 42.3398 0 42.3398 0 42.3398 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 421.75 0 421.75 0 421.75 0 421.75 0 421.75 42.3398 421.75 42.3398 421.75 42.3398 421.75 42.3398 0 42.3398 0 42.3398 0 42.3398 0 42.3398 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="4" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="263.746062992126" YPOS="70.2047271728516" WIDTH="421.75" HEIGHT="42.3398361206055" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Bold" ISIZE="20" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 421.75 0 421.75 0 421.75 0 421.75 0 421.75 42.3398 421.75 42.3398 421.75 42.3398 421.75 42.3398 0 42.3398 0 42.3398 0 42.3398 0 42.3398 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 421.75 0 421.75 0 421.75 0 421.75 0 421.75 42.3398 421.75 42.3398 421.75 42.3398 421.75 42.3398 0 42.3398 0 42.3398 0 42.3398 0 42.3398 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="4" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <ITEXT FONT="FreeSans Bold" FONTSIZE="20" FCOLOR="White" CH="STUDYING ATMOSPHERIC POLLUTION"/>
             <trail/>
             <PageItemAttributes/>
@@ -214,42 +214,49 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Theory of operation"/>
             <para PARENT="Body title"/>
-            <ITEXT CH="The MSA is a data logging computer with a standard set of built-in sensors and an expanded set of inputs to allow guest packages to be connected. External devices such as LEDs, buzzers, pumps, and heaters are controlled via existing GPIO pins. The MSA is comprised of six major subsystems:"/>
+            <ITEXT CH="The MSA is a data logging computer with a standard set of built-in sensors and an expanded set of inputs to allow guest packages to be connected. External devices such as LEDs, buzzers, pumps and heaters are controlled via existing GPIO pins. The MSA is comprised of six major subsystems:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="1. Raspberry Pi (Version 1 - Model B)"/>
+            <ITEXT CH="1. Raspberry Pi Model B"/>
             <para PARENT="Body text"/>
             <ITEXT CH="2. System Interface Daughterboard"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="3. External Sensor Board"/>
+            <ITEXT CH="3. External sensor board"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="4. External Controls and Indicators"/>
+            <ITEXT CH="4. External controls and indicators"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="5. Power Supply"/>
+            <ITEXT CH="5. Power supply"/>
             <para PARENT="Body text"/>
             <ITEXT CH="6. Enclosures"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The Raspberry Pi serves as the primary platform for the MSA system. It monitors inputs, communicates with sensors, processes and stores flight data, and controls LEDs, motors, and heaters. "/>
-            <para PARENT="Body text"/>
+            <ITEXT CH="The Raspberry Pi serves as the primary platform for the MSA system. It monitors inputs, communicates with sensors, processes and stores flight data and controls LEDs, motors and heaters. "/>
             <para PARENT="Body text"/>
             <ITEXT CH="System Interface Daugherboard"/>
             <para PARENT="Body title"/>
             <ITEXT CH="The System Interface Daughterboard (SID) links the Raspberry Pi to everything else in the system. It also provides regulated power. The SID is where analogue and digital sensors are mounted or connected. It is equipped with the following components:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The sensors are used to calibrate data and help eliminate bad data which may have been recorded during an event; such as an impact, extreme temperature, or high humidity. All sensors communicate over the available I2C bus, with analogue sensors routed to an I2C capable ADC. "/>
+            <ITEXT CH="The sensors are used to calibrate data and help eliminate bad data which may have been recorded during an event; such as an impact, extreme temperature, or high humidity. All sensors communicate over the available I"/>
+            <ITEXT FEATURES="inherit superscript" CH="2"/>
+            <ITEXT CH="C bus, with analogue sensors routed to an I"/>
+            <ITEXT FEATURES="inherit superscript" CH="2"/>
+            <ITEXT CH="C capable ADC. "/>
             <para PARENT="Body text"/>
-            <ITEXT CH="There are two primary sensor circuits built into the SID. The first is a flight dynamic circuit which consists of an I2C accelerometer/gyroscope sensor and magnetometer. "/>
+            <ITEXT CH="There are two primary sensor circuits built into the SID. The first is a flight dynamic circuit which consists of an I"/>
+            <ITEXT FEATURES="inherit superscript" CH="2"/>
+            <ITEXT CH="C accelerometer/gyroscope sensor and magnetometer. "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The second is an environmental circuit composed of temperature, humidity, and pressure sensors."/>
+            <ITEXT CH="The second is an environmental circuit composed of temperature, humidity and pressure sensors."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The ADC can support up to sixteen single-ended analogue sensors, not including an internal temperature sensor. The I2C bus can support many more devices."/>
+            <ITEXT CH="The ADC can support up to sixteen single-ended analogue sensors, not including an internal temperature sensor. The I"/>
+            <ITEXT FEATURES="inherit superscript" CH="2"/>
+            <ITEXT CH="C bus can support many more devices."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="We designed our circuit boards using a free version of the Eagle PCB Design Software by CadSoft. We manufactured the boards in-house using commercially available chemicals and photosensitive PCBs. The top view of a completed SID board is shown above. The assembled board mounts to the Raspberry Pi via the 2x13 pin header. "/>
+            <ITEXT CH="We designed our circuit boards using a free version of the Eagle PCB Design software by CadSoft. We manufactured the boards in-house using commercially available chemicals and photosensitive PCBs. The top view of a completed SID board is shown on the left. The assembled board mounts to the Raspberry Pi via the 2x13 pin GPIO header. "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="External sensors"/>
@@ -266,9 +273,11 @@
             <ITEXT CH="The power supply subsystem combines software and hardware to provide power and initiate a safe shutdown in the event of battery failure."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="The hardware component is basically a 7.4V LiPO battery and two linear voltage regulators (5V and 3.3V). The 5V regulator supplies power to the Raspberry Pi and has a couple hundred milliamps available for other devices. The 3.3V regulator provides voltage for the I2C bus and all of the onboard sensors."/>
+            <ITEXT CH="The hardware component is basically a 7.4V LiPO battery and two linear voltage regulators (5V and 3.3V). The 5V regulator supplies power to the Raspberry Pi and has a couple hundred milliamps available for other devices. The 3.3V regulator provides voltage for the I"/>
+            <ITEXT FEATURES="inherit superscript" CH="2"/>
+            <ITEXT CH="C bus and all of the onboard sensors."/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Battery power is a precious commodity on balloon flights, as capacity per gram quickly eats into mass budgets. Federal regulations limit balloon packages to 5.4kg, which must be distributed amongst various flight packages; including radio transmitters, cameras, and other scientific instruments. The MSA system was limited to just 408g which made battery selection crucial."/>
+            <ITEXT CH="Battery power is a precious commodity on balloon flights, as capacity per gram quickly eats into mass budgets. Federal regulations limit balloon packages to 5.4kg, which must be distributed among various flight packages; including radio transmitters, cameras and other scientific instruments. The MSA system was limited to just 408g which made battery selection crucial."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="The Raspberry Pi draws between 310mA and 390mA under normal operation; this includes the current draw of the HDMI output chip and the USB/Ethernet chips, which account for nearly one half of the total current consumption. To prolong battery life during flight, these chips must be disabled. The chips are disabled in the MSA code by calling two Linux commands. "/>
@@ -284,7 +293,11 @@
             <ITEXT CH="The next line of code suspends the USB/Ethernet controller:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT FONT="Monaco Regular" FONTSIZE="10" FCOLOR="White" FSHADE="100" CH=" system(&quot;sh -c \&quot;echo 1 &gt; /sys/devices/platform/bcm2708/usb/bussuspend\&quot; &quot;); "/>
+            <ITEXT FONT="Monaco Regular" FONTSIZE="10" FCOLOR="White" FSHADE="100" CH=" system(&quot;sh -c \&quot;echo 1 &gt; "/>
+            <para PARENT="Code"/>
+            <ITEXT FONT="Monaco Regular" FONTSIZE="10" FCOLOR="White" FSHADE="100" CH=" /sys/devices/platform/bcm2708/usb/bussusp"/>
+            <para PARENT="Code"/>
+            <ITEXT FONT="Monaco Regular" FONTSIZE="10" FCOLOR="White" FSHADE="100" CH=" end\&quot; &quot;); "/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Both of these chips are re-enabled when the MSA is rebooted or powered up for the first time."/>
@@ -292,7 +305,7 @@
             <ITEXT CH="After the chips are disabled, the average current draw of the Raspberry Pi drops to 180mA."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Factoring in the additional power consumption of the sensors and ICs, a total of 14.42mA, and the required battery life of 4 hours, a minimum battery capacity of 778mAh is required."/>
+            <ITEXT CH="Factoring in the additional power consumption of the sensors and ICs (a total of 14.42mA) and the required battery life of 4 hours, a minimum battery capacity of 778mAh is required."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT FONT="FreeSans Bold" CH="4hrs x (180mA + 14.42 mA) = 778mAh "/>
@@ -303,7 +316,7 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Enclosures"/>
             <para PARENT="Body title"/>
-            <ITEXT CH="An internal enclosure was designed to protect the Raspberry Pi and SID from shock and vibrations as the MSA makes its way through the jet stream and upon landing. It is made of high-density foam wrapped in a lightweight fabric. The fabric acts as a hinge and allows the lid to wrap around the sides, which are secured with VELCRO® brand hook-and-loop fasterners."/>
+            <ITEXT CH="An internal enclosure was designed to protect the Raspberry Pi and SID from shock and vibrations as the MSA makes its way through the jet stream and also on landing. It is made of high-density foam wrapped in a lightweight fabric. The fabric acts as a hinge and allows the lid to wrap around the sides, which are secured with VELCRO® brand hook-and-loop fasterners."/>
             <para PARENT="Body text"/>
             <ITEXT CH="The internal enclosure fits snuggly into a 30cm x 30cm x 30cm Styrofoam external enclosure. The external enclosure provides structural rigidness for the external controls, and insulates sensitive components from extreme environmental conditions."/>
             <para PARENT="Body text"/>
@@ -313,7 +326,7 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Coming up"/>
             <para PARENT="Body title"/>
-            <ITEXT CH="In part 2 of this series, I will discuss how the MSA initiates the data logging program at startup, communicates with some of the sensors, stores data, manages sampling rates, interfaces with the user, and responds to conditional events; such as low battery voltage."/>
+            <ITEXT CH="In part 2 of this series, I will discuss how the MSA initiates the data logging program at startup, communicates with some of the sensors, stores data, manages sampling rates, interfaces with the user and responds to conditional events; such as low battery voltage."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="The code for the MSA is written completely in C and is facilitated with the aid of the BCM 2835 C library, maintained by Mike McCauley at "/>
@@ -340,7 +353,7 @@
             <ITEXT CH="Dr. Fon Brown: Mentor and Professor of Electronics Engineering at WSU"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT FONTSIZE="12" CH="Development of the MSA was funded in part by the Val A. Browning Foundation, the Ralph Nye Charitable Foundation, the Weber State University Office of Undergraduate Research, and the Utah Chapter of the AIAA. HARBOR would like to give special thanks to Al Rydman for his hospitality and for making the Duchesne Municipal Airport available to us to launch our system."/>
+            <ITEXT FONTSIZE="12" CH="Development of the MSA was funded in part by the Val A. Browning Foundation, the Ralph Nye Charitable Foundation, the Weber State University Office of Undergraduate Research and the Utah Chapter of the AIAA. HARBOR would like to give special thanks to Al Rydman for his hospitality and for making the Duchesne Municipal Airport available to us to launch our system."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Useful links"/>
@@ -364,7 +377,7 @@
         <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="128.347086614173" YPOS="956.505590555119" WIDTH="538.588346456693" HEIGHT="730.994409444881" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="2" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 730.994 538.588 730.994 538.588 730.994 538.588 730.994 0 730.994 0 730.994 0 730.994 0 730.994 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="40" BACKITEM="25">
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="410.250008266179" YPOS="636.686290350486" WIDTH="256.685424804688" HEIGHT="170.677185058594" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.24" LOCALSCY="0.24" LOCALX="118.110236220472" LOCALY="59.0551181102362" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="images/1.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.685 0 256.685 0 256.685 0 256.685 0 256.685 170.677 256.685 170.677 256.685 170.677 256.685 170.677 0 170.677 0 170.677 0 170.677 0 170.677 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.685 0 256.685 0 256.685 0 256.685 0 256.685 170.677 256.685 170.677 256.685 170.677 256.685 170.677 0 170.677 0 170.677 0 170.677 0 170.677 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="410.250008266179" YPOS="636.686290350486" WIDTH="256.685424804688" HEIGHT="170.677185058594" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.27" LOCALSCY="0.27" LOCALX="52.49343832021" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="images/1.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.685 0 256.685 0 256.685 0 256.685 0 256.685 170.677 256.685 170.677 256.685 170.677 256.685 170.677 0 170.677 0 170.677 0 170.677 0 170.677 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.685 0 256.685 0 256.685 0 256.685 0 256.685 170.677 256.685 170.677 256.685 170.677 256.685 170.677 0 170.677 0 170.677 0 170.677 0 170.677 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -388,7 +401,7 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="128.347086614173" YPOS="1384.17417415108" WIDTH="256.679748535156" HEIGHT="139.4951171875" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.239563636363636" LOCALSCY="0.239563636363636" LOCALX="154.556602555828" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="images/image007.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.68 0 256.68 0 256.68 0 256.68 0 256.68 139.495 256.68 139.495 256.68 139.495 256.68 139.495 0 139.495 0 139.495 0 139.495 0 139.495 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.68 0 256.68 0 256.68 0 256.68 0 256.68 139.495 256.68 139.495 256.68 139.495 256.68 139.495 0 139.495 0 139.495 0 139.495 0 139.495 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="128.347086614173" YPOS="1378.5048828125" WIDTH="256.679748535156" HEIGHT="139.4951171875" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.239563636363636" LOCALSCY="0.239563636363636" LOCALX="154.556602555828" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="images/image007.png" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 256.68 0 256.68 0 256.68 0 256.68 0 256.68 139.495 256.68 139.495 256.68 139.495 256.68 139.495 0 139.495 0 139.495 0 139.495 0 139.495 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 256.68 0 256.68 0 256.68 0 256.68 0 256.68 139.495 256.68 139.495 256.68 139.495 256.68 139.495 0 139.495 0 139.495 0 139.495 0 139.495 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -469,15 +482,15 @@
             <para/>
             <ITEXT FCOLOR="White" CH="* TMP112 (temperature sensor)"/>
             <para/>
-            <ITEXT FCOLOR="White" CH="* COM-08720 (pushbutton)"/>
+            <ITEXT FCOLOR="White" CH="* COM-08720 (push button)"/>
             <para/>
             <ITEXT FCOLOR="White" CH="* MIC2937A (3.3V regulator)"/>
             <para/>
             <ITEXT FCOLOR="White" CH="* MIC2937A (5.0V regulator)"/>
             <para/>
-            <ITEXT FCOLOR="White" CH="* LTC2495 (16 Channel ADC)"/>
+            <ITEXT FCOLOR="White" CH="* LTC2495 (16 channel ADC)"/>
             <para/>
-            <ITEXT FCOLOR="White" CH="* DS3231M (Real-Time Clock)"/>
+            <ITEXT FCOLOR="White" CH="* DS3231M (Real-time clock)"/>
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
@@ -489,7 +502,7 @@
             <trail/>
             <PageItemAttributes/>
         </PAGEOBJECT>
-        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="365.25" YPOS="90.6988220214844" WIDTH="322.080718994141" HEIGHT="34.0837783813477" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Regular" ISIZE="14" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 322.081 0 322.081 0 322.081 0 322.081 0 322.081 34.0838 322.081 34.0838 322.081 34.0838 322.081 34.0838 0 34.0838 0 34.0838 0 34.0838 0 34.0838 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 322.081 0 322.081 0 322.081 0 322.081 0 322.081 34.0838 322.081 34.0838 322.081 34.0838 322.081 34.0838 0 34.0838 0 34.0838 0 34.0838 0 34.0838 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="4" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="281.417938232422" YPOS="90.6988220214844" WIDTH="386.070251464844" HEIGHT="34.0837783813477" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" TXTFILL="White" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="FreeSans Regular" ISIZE="14" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 386.07 0 386.07 0 386.07 0 386.07 0 386.07 34.0838 386.07 34.0838 386.07 34.0838 386.07 34.0838 0 34.0838 0 34.0838 0 34.0838 0 34.0838 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 386.07 0 386.07 0 386.07 0 386.07 0 386.07 34.0838 386.07 34.0838 386.07 34.0838 386.07 34.0838 0 34.0838 0 34.0838 0 34.0838 0 34.0838 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" ALIGN="1" LAYER="4" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
             <ITEXT FONT="FreeSans Regular" FONTSIZE="14" FCOLOR="White" CH="A Multi-Sensor Array for Atmospheric Science"/>
             <trail ALIGN="1"/>
             <PageItemAttributes/>
