@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SCRIBUSUTF8NEW Version="1.4.3">
+<SCRIBUSUTF8NEW Version="1.4.1.svn">
     <DOCUMENT ANZPAGES="4" PAGEWIDTH="595.275590551181" PAGEHEIGHT="841.889763779528" BORDERLEFT="28.3464566929134" BORDERRIGHT="28.3464566929134" BORDERTOP="28.3464566929134" BORDERBOTTOM="28.3464566929134" PRESET="0" BleedTop="8.50393700787402" BleedLeft="8.50393700787402" BleedRight="8.50393700787402" BleedBottom="8.50393700787402" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="3.881" UNITS="1" DFONT="Bitstream Charter Bold" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="CineonLog M " DPPr="Fogra27L CMYK Coated Press" DPIn="CineonLog M " DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="CineonLog M " DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="6" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="1" SnapToGuides="1" SnapToGrid="0" MINGRID="20.0012598425197" MAJGRID="100.00062992126" SHOWGRID="0" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="1" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="600000" ScratchBottom="20.0012598425197" ScratchLeft="100.00062992126" ScratchRight="100.00062992126" ScratchTop="20.0012598425197" GapHorizontal="0" GapVertical="39.9996850393701" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="0.019" dispY="0.019" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
         <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
         <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
@@ -50,7 +50,7 @@
         <LAYERS NUMMER="12" LEVEL="4" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#ff6470"/>
         <LAYERS NUMMER="13" LEVEL="8" NAME="Image" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#ffaa00"/>
         <Printer firstUse="1" toFile="1" useAltPrintCommand="1" outputSeparations="0" useSpotColors="0" useColor="1" mirrorH="1" mirrorV="0" useICC="0" doGCR="1" doClip="1" setDevParam="0" useDocBleeds="0" cropMarks="1" bleedMarks="1" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PDLanguage="3" markOffset="3.74231782764791e-308" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="" filename="" separationName="" printerCommand=""/>
-        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="1" Quality="2" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="1" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="CineonLog M " ImageP="CineonLog M " PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="1" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
+        <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="CineonLog M " ImageP="CineonLog M " PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="1" bleedMarks="1" registrationMarks="1" colorMarks="1" docInfoMarks="1" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="1" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
             <Subset Name="FreeSans Bold"/>
             <Subset Name="FreeSans Regular"/>
             <Subset Name="Monaco Regular"/>
@@ -208,16 +208,16 @@
             <PageItemAttributes/>
         </PAGEOBJECT>
         <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="128.347086614173" YPOS="360.080708665355" WIDTH="538.588346456693" HEIGHT="447.75" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="25.51181102" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 538.588 0 538.588 0 538.588 0 538.588 0 538.588 447.75 538.588 447.75 538.588 447.75 538.588 447.75 0 447.75 0 447.75 0 447.75 0 447.75 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="6" BOOKMARK="0" NEXTITEM="27" BACKITEM="-1">
-            <ITEXT FONTSIZE="12" CH="Welcome back to the C++ Cache.  The subject of this month's article is the introduction of C++ classes.  Before continuing, it may be helpful to read previous C articles in Issues 3, 4, 5, 6, 9, 13 and 17, and previous C++ articles in Issues 7, 8, 10 and 18. "/>
+            <ITEXT FONTSIZE="12" CH="Welcome back to the C++ Cache. The subject of this month's article is the introduction of C++ classes.  Before continuing, it may be helpful to read previous C articles in Issues 3, 4, 5, 6, 9, 13 and 17, plus previous C++ articles in Issues 7, 8, 10 and 18. "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="Object-orientated programming"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="When programs become very large and there are many data structures associated with many different pieces of a program, then it can be helpful to associate particular functions with particular data structures.  In object-orientated programming, the basic building block of a program is an object.  An object can include functions and data members.  Object-orientated programming represents a different style of programming, where concepts are grouped together to match purposes.  For example, a car object could contain some variables such as the number of seats or the petrol left in the tank.  The car object could also contain a GPS function that would return the position of the car in space."/>
+            <ITEXT CH="When programs become very large and there are many data structures associated with many different pieces of a program then it can be helpful to associate particular functions with particular data structures. In object-orientated programming the basic building block of a program is an object. An object can include functions and data members. Object-orientated programming represents a different style of programming, where concepts are grouped together to match purposes. For example, a car object could contain some variables such as the number of seats or the petrol left in the tank. The car object could also contain a GPS function that would return the position of the car in space."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Each object is instantiated in a similar manner as a simple variable.  Instead of a simple type, an object is instantiated with a class.  In the case of a simple variable,"/>
+            <ITEXT CH="Each object is instantiated in a similar manner as a simple variable. Instead of a simple type, an object is instantiated with a class. In the case of a simple variable,"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" int i;"/>
@@ -237,34 +237,34 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Just as two "/>
             <ITEXT FONT="Monaco Regular" CH="int"/>
-            <ITEXT CH=" variables do not share the same memory location by default, two objects also do not share the same memory location by default.  This means that if a value inside an object is changed, it will not normally affect the values within another object of the same class.  When an object is instantiated, the associated constructor function described in the class declaration is called.  The constructor function is typically used to initialise data members that belong to the class."/>
+            <ITEXT CH=" variables do not share the same memory location by default, two objects also do not share the same memory location by default. This means that if a value inside an object is changed, it will not normally affect the values within another object of the same class. When an object is instantiated, the associated constructor function described in the class declaration is called. The constructor function is typically used to initialise data members that belong to the class."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="A first C++ class"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Open a terminal window.  Then use a text editor, such as nano or emacs, to create a file called "/>
+            <ITEXT CH="Open a terminal windo then use a text editor, such as nano or emacs, to create a file called "/>
             <ITEXT FONT="Monaco Regular" CH="square.h"/>
             <ITEXT CH=".  Copy the code below into "/>
             <ITEXT FONT="Monaco Regular" CH="square.h"/>
-            <ITEXT CH=" and save the file.  "/>
+            <ITEXT CH=" and save the file:  "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="The "/>
             <ITEXT FONT="Monaco Regular" CH="square.h"/>
             <ITEXT CH=" header file contains the class declaration, where name of the class is "/>
             <ITEXT FONT="Monaco Regular" CH="Square"/>
-            <ITEXT CH=".  The "/>
+            <ITEXT CH=". The "/>
             <ITEXT FONT="Monaco Regular" CH="Square"/>
-            <ITEXT CH=" class contains two constructor functions, two other member functions,  and two data members.  The name of the constructor function must be the same as the name of the class.  The program uses the first constructor if no arguments are given and the second constructor if two values are provided.  If the object instantiation does not match either of these constructors, then the compiler will report an error."/>
+            <ITEXT CH=" class contains two constructor functions, two other member functions and two data members. The name of the constructor function must be the same as the name of the class. The program uses the first constructor if no arguments are given and the second constructor if two values are provided. If the object instantiation does not match either of these constructors then the compiler will report an error."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="Headed files support limited functionality.  For example, it is possible to return a value from function that is declared in a header file.  In this case, the "/>
+            <ITEXT CH="Headed files support limited functionality. For example, it is possible to return a value from a function that is declared in a header file.  In this case, the "/>
             <ITEXT FONT="Monaco Regular" CH="colour()"/>
             <ITEXT CH=" function is declared and implemented in the header file.  In contrast, the "/>
             <ITEXT FONT="Monaco Regular" CH="area()"/>
-            <ITEXT CH=" function is declared in the header file, but is not implemented in the header file.  In this example, the implementation of the constructors and the "/>
+            <ITEXT CH=" function is declared in the header file, but is not implemented in the header file. In this example the implementation of the constructors and the "/>
             <ITEXT FONT="Monaco Regular" CH="area()"/>
             <ITEXT CH=" function is given in a "/>
             <ITEXT FONT="Monaco Regular" CH=".cpp"/>
@@ -281,11 +281,11 @@
             <ITEXT FONT="Monaco Regular" CH="public"/>
             <ITEXT CH=" members can be accessed from outside the class, "/>
             <ITEXT FONT="Monaco Regular" CH="protected"/>
-            <ITEXT CH=" members can only be accessed by objects of the same class or of a derived class and "/>
+            <ITEXT CH=" members can only be accessed by objects of the same class, or of a derived class, and "/>
             <ITEXT FONT="Monaco Regular" CH="private"/>
             <ITEXT CH=" members can only be accessed by objects of the same class.  (The usefulness of "/>
             <ITEXT FONT="Monaco Regular" CH="protected"/>
-            <ITEXT CH=" members becomes clear once inheritance has been introduced.)  In the case of "/>
+            <ITEXT CH=" members becomes clear once inheritance has been introduced.) In the case of "/>
             <ITEXT FONT="Monaco Regular" CH="Square"/>
             <ITEXT CH=", all of the functions are "/>
             <ITEXT FONT="Monaco Regular" CH="public"/>
@@ -309,9 +309,9 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Since the "/>
             <ITEXT FONT="Monaco Regular" CH="Square.cpp"/>
-            <ITEXT CH=" file includes the implementation of functions that were defined in the class declaration, it has to include the class declaration itself.  This is included by including the header file "/>
+            <ITEXT CH=" file includes the implementation of functions that were defined in the class declaration, it has to include the class declaration itself. This is included by including the header file "/>
             <ITEXT FONT="Monaco Regular" CH="Square.h"/>
-            <ITEXT CH=".  The "/>
+            <ITEXT CH=". The "/>
             <ITEXT FONT="Monaco Regular" CH="cmath"/>
             <ITEXT CH=" header file is needed to use the "/>
             <ITEXT FONT="Monaco Regular" CH="pow"/>
@@ -322,26 +322,26 @@
             <para PARENT="Body text"/>
             <ITEXT CH="Below the include statements, the "/>
             <ITEXT FONT="Monaco Regular" CH="Square.cpp"/>
-            <ITEXT CH=" file contains the implementation of the three functions that were defined in the header file but were not implemented in the header file.  Each of the function names is prefixed by the class name and two colons.  The constructor functions do not have a declared return type, since they return an object of the given class. For other functions, the return type must be given to the left of the class name.  In this example, the type "/>
+            <ITEXT CH=" file contains the implementation of the three functions that were defined in the header file but were not implemented in the header file. Each of the function names is prefixed by the class name and two colons. The constructor functions do not have a declared return type, since they return an object of the given class. For other functions, the return type must be given to the left of the class name.  In this example, the type "/>
             <ITEXT FONT="Monaco Regular" CH="double"/>
             <ITEXT CH=" is given before "/>
             <ITEXT FONT="Monaco Regular" CH="Square::area()"/>
             <ITEXT CH=".  In the constructors, values can be assigned to data members using the parentheses notation given or with the assignment operator ("/>
             <ITEXT FONT="Monaco Regular" CH="="/>
-            <ITEXT CH=").  The data members act as global variables within the functions of the class.  Since they are both "/>
+            <ITEXT CH=").  The data members act as global variables within the functions of the class. Since they are both "/>
             <ITEXT FONT="Monaco Regular" CH="private"/>
             <ITEXT CH=" data members, they are commonly prefixed with "/>
             <ITEXT FONT="Monaco Regular" CH="m_"/>
-            <ITEXT CH=".  This is not a requirement, but a convention that makes reading C++ code a little simpler."/>
+            <ITEXT CH=". This is not a requirement, but a convention that makes reading C++ code a little simpler."/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH="The last part of this introduction is the use of the class "/>
             <ITEXT FONT="Monaco Regular" CH="Square"/>
-            <ITEXT CH=".  Create a new file called "/>
+            <ITEXT CH=". Create a new file called "/>
             <ITEXT FONT="Monaco Regular" CH="main.cpp"/>
-            <ITEXT CH=". Then add the code below and save the file."/>
+            <ITEXT CH=", then add the code below and save the file:"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="To use the class, the "/>
+            <ITEXT CH="To use the class the "/>
             <ITEXT FONT="Monaco Regular" CH="main.cpp"/>
             <ITEXT CH=" file includes the header file "/>
             <ITEXT FONT="Monaco Regular" CH="Square.h"/>
@@ -349,7 +349,7 @@
             <ITEXT FONT="Monaco Regular" CH="area()"/>
             <ITEXT CH=" and "/>
             <ITEXT FONT="Monaco Regular" CH="colour()"/>
-            <ITEXT CH=" are called and the values of the area and the colour (integer value) is printed on the screen.  When calling a function of a given object, the function name is prefixed with the object name.  In this example, the objects are created on the stack and go out of scope in the same way as a simple variable.  This means that the two objects are destroyed when the "/>
+            <ITEXT CH=" are called and the values of the area and the colour (integer value) is printed on the screen. When calling a function of a given object, the function name is prefixed with the object name.  In this example the objects are created on the stack and go out of scope in the same way as a simple variable.  This means that the two objects are destroyed when the "/>
             <ITEXT FONT="Monaco Regular" CH="main()"/>
             <ITEXT CH=" function finishes."/>
             <para PARENT="Body text"/>
@@ -360,19 +360,19 @@
             <ITEXT FONT="Monaco Regular" CH=".cpp"/>
             <ITEXT CH=" files and produce an executable.  Create a new file called "/>
             <ITEXT FONT="Monaco Regular" CH="Makefile"/>
-            <ITEXT CH=", add the code at the top of the next page and save the file.  The indented lines should be indented by a single tab, rather than spaces.  (More information on Makefiles is provided in  Issue 7 of The MagPi.)  The Makefile should be in the same directory as the "/>
+            <ITEXT CH=", add the code at the top of the next page and save the file.  The indented lines should be indented by a single tab, rather than spaces.  (More information on Makefiles is provided in  Issue 7 of The MagPi). The Makefile should be in the same directory as the "/>
             <ITEXT FONT="Monaco Regular" CH="Square.h"/>
             <ITEXT CH=", "/>
             <ITEXT FONT="Monaco Regular" CH="Square.cpp"/>
             <ITEXT CH=" and "/>
             <ITEXT FONT="Monaco Regular" CH="main.cpp"/>
-            <ITEXT CH=" files.  Then type "/>
+            <ITEXT CH=" files. Then type, "/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" make"/>
             <para PARENT="Code"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="to compile the code and build the executable.  Once the executable has been build, run the program:"/>
+            <ITEXT CH="to compile the code and build the executable.  Once the executable has been built, run the program:"/>
             <para PARENT="Body text"/>
             <para PARENT="Body text"/>
             <ITEXT CH=" ./square"/>
@@ -382,7 +382,9 @@
             <ITEXT CH="Objects on the heap"/>
             <para PARENT="Body title"/>
             <para PARENT="Body text"/>
-            <ITEXT CH="When an object is needed within several different functions calls, it might be helpful to create it on the heap instead.  The difference between creating an object on the stack and the heap is that objects on the stack are automatically cleaned up when they go out of scope, whereas objects on the heap stay in memory.  To clean up an object on the heap, it has to be explicitly deleted.  A modified version of main.cpp is given below, where the objects are created on the heap instead.  The syntax "/>
+            <ITEXT CH="When an object is needed within several different functions calls, it might be helpful to create it on the heap instead. The difference between creating an object on the stack and the heap is that objects on the stack are automatically cleaned up when they go out of scope, whereas objects on the heap stay in memory.  To clean up an object on the heap it has to be explicitly deleted.  A modified version of "/>
+            <ITEXT FONT="Monaco Regular" CH="main.cpp"/>
+            <ITEXT CH=" is given below, where the objects are created on the heap instead. The syntax "/>
             <ITEXT FONT="Monaco Regular" CH="s-&gt;colour()"/>
             <ITEXT CH=" is short hand for "/>
             <ITEXT FONT="Monaco Regular" CH="(*s).colour()"/>
